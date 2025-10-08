@@ -22,70 +22,57 @@ const teamMembersData: Record<string, any> = {
     }
   },
   "kristian-nilsen": {
-    name: "Kristian Bernard Nilsen",
+    name: "Dr. Kristian Bernard Nilsen",
     role: "Co-Investigator",
     affiliation: "Department of Neurology, OUS",
     expertise: ["Clinical Neurophysiology", "Applied Neurophysiology", "AI in Healthcare"],
     email: "kristian.nilsen@oslo-universitetssykehus.no",
-    bio: "Kristian Bernard Nilsen is leading the research group for applied neurophysiology and head of section for Clinical Neurophysiology, Department of Neurology at OUS. He is currently leading a large national study for development of a national infrastructure for AI studies in clinical neurophysiology.",
+    bio: "Dr. Kristian Bernard Nilsen is leading the research group for applied neurophysiology and head of section for Clinical Neurophysiology, Department of Neurology at OUS. He is currently leading a large national study for development of a national infrastructure for AI studies in clinical neurophysiology.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
       institutionPage: "https://oslo-universitetssykehus.no"
     }
   },
-  "emily-anderson": {
-    name: "Dr. Emily Anderson",
-    role: "Research Scientist",
-    affiliation: "AI Research Lab, University Medical Center",
-    expertise: ["Machine Learning", "Signal Processing", "Data Science"],
-    email: "e.anderson@example.edu",
-    bio: "Dr. Emily Anderson is a computational neuroscientist specializing in machine learning applications for medical diagnostics. Her expertise in signal processing and algorithm development has been crucial in creating the AI models used in this project. She has a strong track record of translating complex algorithms into clinically useful tools.",
+  "hemin-qadir": {
+    name: "Dr. Hemin Qadir",
+    role: "Senior AI Scientist",
+    affiliation: "Intervention Centre, Oslo University Hospital",
+    expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
+    email: "hemin.qadir@oslo-universitetssykehus.no",
+    bio: "Dr. Hemin Qadir is a Senior AI Scientist at the Intervention Centre, Oslo University Hospital. He is an expert in machine learning, deep learning, and multimodal AI, bringing advanced computational techniques to medical applications.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://university.edu/faculty/emily-anderson",
+      institutionPage: "https://oslo-universitetssykehus.no",
       orcid: "https://orcid.org/0000-0000-0000-0001"
     }
   },
-  "michael-torres": {
-    name: "Dr. Michael Torres",
-    role: "Clinical Researcher",
-    affiliation: "Department of Neurology",
-    expertise: ["Clinical Trials", "Patient Outcomes", "Biostatistics"],
-    email: "m.torres@example.edu",
-    bio: "Dr. Michael Torres is an experienced clinical researcher with expertise in designing and conducting multicenter trials. His background in biostatistics ensures rigorous data analysis and interpretation. Dr. Torres oversees the clinical validation aspects of our AI algorithms.",
+  "naim": {
+    name: "Dr. Naim",
+    role: "AI Researcher",
+    affiliation: "Intervention Centre, Oslo University Hospital",
+    expertise: ["Machine Learning", "Signal Processing"],
+    email: "naim@oslo-universitetssykehus.no",
+    bio: "Dr. Naim is an AI Researcher at the Intervention Centre, Oslo University Hospital. His expertise in machine learning and signal processing contributes to the development of advanced analytical methods for medical data.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://university.edu/faculty/michael-torres"
+      institutionPage: "https://oslo-universitetssykehus.no"
     }
   },
-  "lisa-wang": {
-    name: "Dr. Lisa Wang",
-    role: "Postdoctoral Fellow",
-    affiliation: "Neuroscience Research Institute",
-    expertise: ["Neuroimaging", "EEG", "Prognostication"],
-    email: "l.wang@example.edu",
-    bio: "Dr. Lisa Wang completed her PhD in neuroscience with a focus on neuroimaging and EEG analysis. Her research integrates multimodal brain monitoring techniques to improve prognostic accuracy. She is developing novel biomarkers for early outcome prediction in comatose patients.",
+  "haukur-gudmundsson": {
+    name: "Dr. Haukur Tyr Gudmundsson",
+    role: "PhD Student",
+    affiliation: "Oslo University Hospital",
+    expertise: ["Neuroscience", "Neurophysiology"],
+    email: "haukur.gudmundsson@oslo-universitetssykehus.no",
+    bio: "Dr. Haukur Tyr Gudmundsson is a PhD student at Oslo University Hospital with a background in neuroscience and neurophysiology. His research focuses on advancing our understanding of brain function and neurological outcomes.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://university.edu/faculty/lisa-wang",
+      institutionPage: "https://oslo-universitetssykehus.no",
       orcid: "https://orcid.org/0000-0000-0000-0002"
-    }
-  },
-  "james-kim": {
-    name: "Dr. James Kim",
-    role: "Research Associate",
-    affiliation: "Department of Biomedical Engineering",
-    expertise: ["Algorithm Development", "Deep Learning", "Clinical Applications"],
-    email: "j.kim@example.edu",
-    bio: "Dr. James Kim is a biomedical engineer specializing in deep learning applications for medical devices. His work focuses on developing robust algorithms that can operate in real-world clinical environments. He is responsible for the technical implementation and optimization of our AI systems.",
-    links: {
-      linkedin: "https://linkedin.com/in/example",
-      googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://university.edu/faculty/james-kim"
     }
   }
 };

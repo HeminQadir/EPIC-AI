@@ -12,43 +12,35 @@ const teamMembers = [
   },
   {
     id: "kristian-nilsen",
-    name: "Kristian Bernard Nilsen",
+    name: "Dr. Kristian Bernard Nilsen",
     role: "Co-Investigator",
     affiliation: "Department of Neurology, OUS",
     expertise: ["Clinical Neurophysiology", "Applied Neurophysiology", "AI in Healthcare"],
     email: "kristian.nilsen@oslo-universitetssykehus.no"
   },
   {
-    id: "emily-anderson",
-    name: "Dr. Emily Anderson",
-    role: "Research Scientist",
-    affiliation: "AI Research Lab, University Medical Center",
-    expertise: ["Machine Learning", "Signal Processing", "Data Science"],
-    email: "e.anderson@example.edu"
+    id: "hemin-qadir",
+    name: "Dr. Hemin Qadir",
+    role: "Senior AI Scientist",
+    affiliation: "Intervention Centre, Oslo University Hospital",
+    expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
+    email: "hemin.qadir@oslo-universitetssykehus.no"
   },
   {
-    id: "michael-torres",
-    name: "Dr. Michael Torres",
-    role: "Clinical Researcher",
-    affiliation: "Department of Neurology",
-    expertise: ["Clinical Trials", "Patient Outcomes", "Biostatistics"],
-    email: "m.torres@example.edu"
+    id: "naim",
+    name: "Dr. Naim",
+    role: "AI Researcher",
+    affiliation: "Intervention Centre, Oslo University Hospital",
+    expertise: ["Machine Learning", "Signal Processing"],
+    email: "naim@oslo-universitetssykehus.no"
   },
   {
-    id: "lisa-wang",
-    name: "Dr. Lisa Wang",
-    role: "Postdoctoral Fellow",
-    affiliation: "Neuroscience Research Institute",
-    expertise: ["Neuroimaging", "EEG", "Prognostication"],
-    email: "l.wang@example.edu"
-  },
-  {
-    id: "james-kim",
-    name: "Dr. James Kim",
-    role: "Research Associate",
-    affiliation: "Department of Biomedical Engineering",
-    expertise: ["Algorithm Development", "Deep Learning", "Clinical Applications"],
-    email: "j.kim@example.edu"
+    id: "haukur-gudmundsson",
+    name: "Dr. Haukur Tyr Gudmundsson",
+    role: "PhD Student",
+    affiliation: "Oslo University Hospital",
+    expertise: ["Neuroscience", "Neurophysiology"],
+    email: "haukur.gudmundsson@oslo-universitetssykehus.no"
   }
 ];
 
