@@ -44,6 +44,11 @@ export default function ProjectOverviewSection() {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Advancing the assessment of neurological outcomes in comatose cardiac arrest survivors
           </p>
+          <div className="mt-6">
+            <p className="text-sm text-muted-foreground">
+              This is an open project funded by Helse Sør-Øst RHF
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
