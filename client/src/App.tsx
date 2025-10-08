@@ -11,6 +11,7 @@ import Team from "@/pages/Team";
 import TeamMemberDetail from "@/pages/TeamMemberDetail";
 import WorkPackages from "@/pages/WorkPackages";
 import WorkPackageDetail from "@/pages/WorkPackageDetail";
+import Milestones from "@/pages/Milestones";
 import Publications from "@/pages/Publications";
 import Results from "@/pages/Results";
 import Contact from "@/pages/Contact";
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/team/:id" component={TeamMemberDetail} />
       <Route path="/work-packages" component={WorkPackages} />
       <Route path="/work-packages/:id" component={WorkPackageDetail} />
+      <Route path="/milestones" component={Milestones} />
       <Route path="/publications" component={Publications} />
       <Route path="/results" component={Results} />
       <Route path="/contact" component={Contact} />

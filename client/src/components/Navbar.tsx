@@ -11,6 +11,7 @@ export default function Navbar() {
     { path: "/", label: "Overview" },
     { path: "/team", label: "Research Team" },
     { path: "/work-packages", label: "Work Packages" },
+    { path: "/milestones", label: "Milestones" },
     { path: "/publications", label: "Publications" },
     { path: "/results", label: "Data & Results" },
     { path: "/contact", label: "Contact" },

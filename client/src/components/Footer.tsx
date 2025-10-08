@@ -8,6 +8,7 @@ export default function Footer() {
     { label: "Project Overview", path: "/" },
     { label: "Research Team", path: "/team" },
     { label: "Work Packages", path: "/work-packages" },
+    { label: "Milestones", path: "/milestones" },
     { label: "Publications", path: "/publications" },
     { label: "Data & Results", path: "/results" },
   ];
