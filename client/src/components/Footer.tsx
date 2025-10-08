@@ -42,9 +42,9 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:research@neuroprognosis.org" className="hover:text-foreground transition-colors" data-testid="link-footer-email">
+                <span data-testid="text-footer-email">
                   research@neuroprognosis.org
-                </a>
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
