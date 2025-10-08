@@ -47,7 +47,7 @@ export default function WorkPackages() {
               <img
                 src={wpsFigure}
                 alt="Work Packages Overview - WP1 through WP5 showing project structure and relationships"
-                className="w-full max-w-5xl rounded-md mix-blend-multiply dark:mix-blend-lighten"
+                className="w-full max-w-3xl rounded-md mix-blend-multiply dark:mix-blend-lighten"
                 data-testid="img-work-packages-overview"
               />
             </div>
