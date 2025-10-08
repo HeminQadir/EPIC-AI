@@ -22,9 +22,9 @@ export default function Navbar() {
           <Link href="/" data-testid="link-home">
             <div className="flex items-center space-x-3 cursor-pointer hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2">
               <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">N</span>
+                <span className="text-primary-foreground font-bold text-sm">E</span>
               </div>
-              <span className="font-heading font-semibold text-lg hidden sm:block">NeuroPrognosis</span>
+              <span className="font-heading font-semibold text-lg hidden sm:block">EPIC-AI</span>
             </div>
           </Link>
 
