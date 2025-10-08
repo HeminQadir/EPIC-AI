@@ -37,7 +37,7 @@ export default function Hero() {
           Advanced Neurological Outcome Assessment
         </h1>
         
-        <p className="text-lg text-blue-600 dark:text-blue-400 mb-4">
+        <p className="text-xl text-blue-600 dark:text-blue-400 mb-4">
           This is an open project funded by Helse Sør-Øst RHF
         </p>
         
