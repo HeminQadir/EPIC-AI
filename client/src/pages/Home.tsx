@@ -9,7 +9,7 @@ export default function Home() {
       <section className="py-16 bg-card/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-background rounded-lg p-8 shadow-sm">
-            <h2 className="font-heading text-3xl font-semibold mb-6 text-center">Research Framework</h2>
+            <h2 className="font-heading font-semibold text-3xl lg:text-5xl mb-6 text-center">Research Framework</h2>
             
             <div className="flex justify-center mb-8 bg-background p-6 rounded-lg">
               <img
