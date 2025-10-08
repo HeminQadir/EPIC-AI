@@ -1,23 +1,28 @@
+import { Link } from "wouter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Lightbulb, LineChart, Shield } from "lucide-react";
+import { Target, Lightbulb, LineChart, Shield, ArrowRight } from "lucide-react";
 
 const features = [
   {
+    id: "research-objective",
     icon: Target,
     title: "Research Objective",
     description: "Enhance neurological prognosis and reduce uncertainty in treating comatose cardiac arrest survivors through improved EEG assessment reliability."
   },
   {
+    id: "ai-powered-analysis",
     icon: Lightbulb,
     title: "AI-Powered Analysis",
     description: "Develop multi-grading rule-based AI algorithms to predict neurophysiological outcomes from heterogeneous longitudinal EEG data."
   },
   {
+    id: "pattern-recognition",
     icon: LineChart,
     title: "Pattern Recognition",
     description: "Identify discernible patterns that distinguish malignant EEG patterns from sedation effects and irreversible brain damage."
   },
   {
+    id: "clinical-impact",
     icon: Shield,
     title: "Clinical Impact",
     description: "Reduce ethical dilemmas and improve treatment decisions by mitigating uncertainty in prognostic grey areas."
@@ -39,17 +44,23 @@ export default function ProjectOverviewSection() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="hover-elevate" data-testid={`card-feature-${index}`}>
-                <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{feature.description}</CardDescription>
-                </CardContent>
-              </Card>
+              <Link key={index} href={`/overview/${feature.id}`}>
+                <Card className="hover-elevate cursor-pointer group h-full" data-testid={`card-feature-${index}`}>
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl">{feature.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <CardDescription className="text-base">{feature.description}</CardDescription>
+                    <div className="flex items-center gap-2 text-sm text-primary pt-2">
+                      <span>Learn More</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             );
           })}
         </div>
