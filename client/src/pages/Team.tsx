@@ -41,6 +41,22 @@ const teamMembers = [
     affiliation: "Oslo University Hospital",
     expertise: ["Neuroscience", "Neurophysiology"],
     email: "haukur.gudmundsson@oslo-universitetssykehus.no"
+  },
+  {
+    id: "henning-wimmer",
+    name: "Henning Wimmer",
+    role: "Neurologist",
+    affiliation: "Oslo University Hospital Department of Neurology",
+    expertise: ["Neurology", "Clinical Neurophysiology"],
+    email: "henning.wimmer@oslo-universitetssykehus.no"
+  },
+  {
+    id: "line-maria",
+    name: "Line Maria",
+    role: "Neurologist",
+    affiliation: "Oslo University Hospital Department of Neurology",
+    expertise: ["Neurology", "Clinical Neurophysiology"],
+    email: "line.maria@oslo-universitetssykehus.no"
   }
 ];
 
