@@ -1,8 +1,14 @@
 import { Link } from "wouter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Lightbulb, LineChart, Shield, ArrowRight } from "lucide-react";
+import { Target, Lightbulb, LineChart, Shield, ArrowRight, Brain } from "lucide-react";
 
 const features = [
+  {
+    id: "research-framework",
+    icon: Brain,
+    title: "Research Framework",
+    description: "Comprehensive overview of our AI-powered approach to neurological outcome assessment and prognostication."
+  },
   {
     id: "research-objective",
     icon: Target,

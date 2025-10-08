@@ -1,9 +1,21 @@
 import { useRoute } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Lightbulb, LineChart, Shield, ImageIcon } from "lucide-react";
+import { Target, Lightbulb, LineChart, Shield, ImageIcon, Brain } from "lucide-react";
+import epicAIFigure from "@assets/EPIC-AI_1759917976097.png";
 
 //todo: remove mock functionality
 const sectionData: Record<string, any> = {
+  "research-framework": {
+    title: "Research Framework",
+    icon: Brain,
+    summary: "Comprehensive overview of our AI-powered approach to neurological outcome assessment and prognostication.",
+    content: `Assessment of neurological outcomes in comatose cardiac arrest (CA) survivors due to post-anoxic coma remains a persistent challenge in clinical practice. These patients are treated with mechanical ventilation and sedation in the intensive care unit (ICU) demanding substantial additional medical resources due to their complex care requirements. Continuing or withdrawing treatment based on multimodal prognostication using clinical, neurophysiological, biochemical markers and neuroimaging is a daunting task for clinicians.
+
+Since the brain is the most vulnerable organ in CA, and severe brain injury remains the primary cause of death, thus monitoring of the brain function for prognostication purposes is of paramount importance. Electroencephalogram (EEG), either continuously or at specified time points, give the best direct access to the current brain function and the present sedation effects. However, the crucial differentiation between reversible sedation effects (affecting EEGs) and irreversible brain damage is a huge problem.
+
+In addition, the other prognostic markers also lack sensitivity and specificity, thereby leaving a significant portion of patients in uncertain prognostic grey areas. This underscores the imperative need to develop standardized rule-based assessment schemes with improved reliability to enhance prediction outcomes by mitigating uncertainty.`,
+    hasCustomFigure: true
+  },
   "research-objective": {
     title: "Research Objective",
     icon: Target,
@@ -147,12 +159,23 @@ export default function OverviewDetail() {
               <CardTitle className="font-heading text-2xl">Visual Representation</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video w-full bg-muted rounded-lg flex flex-col items-center justify-center gap-4 p-8" data-testid="placeholder-figure">
-                <ImageIcon className="w-16 h-16 text-muted-foreground/50" />
-                <p className="text-muted-foreground text-center">
-                  Figure placeholder - Illustration showing {section.title.toLowerCase()}
-                </p>
-              </div>
+              {section.hasCustomFigure ? (
+                <div className="flex justify-center bg-background p-6 rounded-lg">
+                  <img
+                    src={epicAIFigure}
+                    alt="EPIC-AI Research Framework showing EEG analysis, AI processing, and outcome prediction"
+                    className="w-full max-w-4xl rounded-md mix-blend-multiply dark:mix-blend-lighten"
+                    data-testid="img-research-framework"
+                  />
+                </div>
+              ) : (
+                <div className="aspect-video w-full bg-muted rounded-lg flex flex-col items-center justify-center gap-4 p-8" data-testid="placeholder-figure">
+                  <ImageIcon className="w-16 h-16 text-muted-foreground/50" />
+                  <p className="text-muted-foreground text-center">
+                    Figure placeholder - Illustration showing {section.title.toLowerCase()}
+                  </p>
+                </div>
+              )}
             </CardContent>
           </Card>
         </div>
