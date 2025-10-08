@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
         
         <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-7xl tracking-tight mb-6 max-w-4xl mx-auto">
-          <span className="text-blue-600 dark:text-blue-400">EPIC AI:</span> Advanced Neurological Outcome Assessment
+          <span className="text-blue-600 dark:text-blue-400">EPIC AI:</span> Artificial Intelligence for Advanced Neurological Outcome Assessment
         </h1>
         
         <p className="text-lg sm:text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-4">
