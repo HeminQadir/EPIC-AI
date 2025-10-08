@@ -11,11 +11,11 @@ export default function Home() {
           <div className="bg-background rounded-lg p-8 shadow-sm">
             <h2 className="font-heading text-3xl font-semibold mb-6 text-center">Research Framework</h2>
             
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-8 bg-background p-6 rounded-lg">
               <img
                 src={epicAIFigure}
                 alt="EPIC-AI Research Framework showing EEG analysis, AI processing, and outcome prediction"
-                className="w-full max-w-4xl rounded-md"
+                className="w-full max-w-4xl rounded-md mix-blend-multiply dark:mix-blend-lighten"
                 data-testid="img-research-framework"
               />
             </div>
