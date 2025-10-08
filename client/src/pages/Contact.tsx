@@ -75,19 +75,6 @@ export default function Contact() {
                 );
               })}
             </div>
-
-            <Card className="bg-accent/50">
-              <CardHeader>
-                <CardTitle className="text-lg">Collaboration Opportunities</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  We welcome collaborations with other research institutions, clinical centers, and industry partners. 
-                  If you're interested in contributing to our research or exploring partnership opportunities, 
-                  please reach out to us using the contact form.
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
 

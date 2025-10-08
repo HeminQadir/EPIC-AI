@@ -65,7 +65,7 @@ export default function ProjectOverviewSection() {
           })}
         </div>
 
-        <Card className="bg-accent/50">
+        <Card className="bg-accent/50 mb-6">
           <CardHeader>
             <CardTitle className="font-heading text-2xl">The Challenge</CardTitle>
           </CardHeader>
@@ -79,6 +79,19 @@ export default function ProjectOverviewSection() {
               EEG monitoring provides the best direct access to brain function, but differentiating between reversible sedation effects 
               and irreversible brain damage is a significant problem. Current prognostic markers lack sensitivity and specificity, 
               leaving many patients in uncertain prognostic grey areas.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-accent/50">
+          <CardHeader>
+            <CardTitle className="font-heading text-2xl">Collaboration Opportunities</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-foreground">
+              We welcome collaborations with other research institutions, clinical centers, and industry partners. 
+              If you're interested in contributing to our research or exploring partnership opportunities, 
+              please reach out to us using the contact form.
             </p>
           </CardContent>
         </Card>
