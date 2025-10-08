@@ -37,8 +37,12 @@ export default function Hero() {
           Advanced Neurological Outcome Assessment
         </h1>
         
+        <p className="text-sm text-blue-600 dark:text-blue-400 mb-4">
+          This is an open project funded by Helse Sør-Øst RHF
+        </p>
+        
         <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
-          Enhancing prognosis for comatose cardiac arrest survivors through AI-powered EEG analysis and multimodal prognostication
+          <span className="font-semibold">EPIC AI:</span> Enhancing prognosis for comatose cardiac arrest survivors through AI-powered EEG analysis and multimodal prognostication
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
