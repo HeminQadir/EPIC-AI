@@ -11,6 +11,14 @@ export default function Hero() {
     }
   };
 
+  const scrollToCollaborations = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById('collaboration-opportunities');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
@@ -43,6 +51,9 @@ export default function Hero() {
               View Publications
             </Button>
           </Link>
+          <Button size="lg" variant="outline" onClick={scrollToCollaborations} data-testid="button-collaborations">
+            Collaborations
+          </Button>
         </div>
       </div>
     </section>

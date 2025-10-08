@@ -83,7 +83,7 @@ export default function ProjectOverviewSection() {
           </CardContent>
         </Card>
 
-        <Card className="bg-accent/50">
+        <Card id="collaboration-opportunities" className="bg-accent/50">
           <CardHeader>
             <CardTitle className="font-heading text-2xl">Collaboration Opportunities</CardTitle>
           </CardHeader>
