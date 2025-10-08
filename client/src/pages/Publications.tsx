@@ -6,6 +6,16 @@ import { useState } from "react";
 //todo: remove mock functionality
 const publications = [
   {
+    title: "Biaxialformer: Leveraging Channel Independence and Inter-Channel Correlations in EEG Signal Decoding for Predicting Neurological Outcomes",
+    authors: "Nesaragi N., Qadir H.A., Halvorsen P.S., Balasingham I.",
+    journal: "arXiv preprint arXiv:2507.02879",
+    year: "2025",
+    abstract: "Accurate decoding of EEG signals requires comprehensive modeling of both temporal dynamics within individual channels and spatial dependencies across channels. We propose Biaxialformer, characterized by a meticulously engineered two-stage attention-based framework that independently captures both sequence-specific (temporal) and channel-specific (spatial) EEG information. Using the multicenter I-CARE data from five hospitals, we validate the robustness and generalizability with an average AUC 0.7688, AUPRC 0.8643, and F1 0.6518 in a cross-hospital scenario.",
+    doi: "10.48550/arXiv.2507.02879",
+    pdfUrl: "https://arxiv.org/pdf/2507.02879",
+    tags: ["EEG", "Transformer", "Neurological Outcomes", "Machine Learning", "Signal Processing"]
+  },
+  {
     title: "AI-Enhanced EEG Analysis for Neurological Outcome Prediction in Cardiac Arrest Survivors",
     authors: "Mitchell S., Chen R., Anderson E., Torres M.",
     journal: "Journal of Neurocritical Care",
