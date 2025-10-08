@@ -10,6 +10,7 @@ export default function Navbar() {
   const navItems = [
     { path: "/", label: "Overview" },
     { path: "/team", label: "Research Team" },
+    { path: "/work-packages", label: "Work Packages" },
     { path: "/publications", label: "Publications" },
     { path: "/results", label: "Data & Results" },
     { path: "/contact", label: "Contact" },

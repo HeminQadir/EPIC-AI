@@ -1,0 +1,70 @@
+import { Link } from "wouter";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Package, Database, Brain, Users, ArrowRight } from "lucide-react";
+
+const workPackages = [
+  {
+    id: "wp1-data-collection",
+    icon: Database,
+    title: "WP1: Data Collection & Harmonization",
+    description: "Systematic collection and standardization of multi-center EEG data, clinical parameters, and outcome measures from cardiac arrest survivors."
+  },
+  {
+    id: "wp2-ai-development",
+    icon: Brain,
+    title: "WP2: AI Algorithm Development",
+    description: "Design and implementation of machine learning models for automated EEG analysis and prognostic assessment."
+  },
+  {
+    id: "wp3-clinical-validation",
+    icon: Users,
+    title: "WP3: Clinical Validation",
+    description: "Prospective validation of AI algorithms in real-world clinical settings across multiple intensive care units."
+  },
+  {
+    id: "wp4-dissemination",
+    icon: Package,
+    title: "WP4: Dissemination & Implementation",
+    description: "Translation of research findings into clinical practice through training programs, publications, and software deployment."
+  }
+];
+
+export default function WorkPackages() {
+  return (
+    <div className="py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h1 className="font-heading font-bold text-4xl lg:text-6xl mb-4">Work Packages</h1>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Our research is organized into four interconnected work packages, each addressing critical aspects of the project
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {workPackages.map((wp, index) => {
+            const Icon = wp.icon;
+            return (
+              <Link key={index} href={`/work-packages/${wp.id}`}>
+                <Card className="hover-elevate cursor-pointer group h-full" data-testid={`card-work-package-${index}`}>
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl">{wp.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <CardDescription className="text-base">{wp.description}</CardDescription>
+                    <div className="flex items-center gap-2 text-sm text-primary pt-2">
+                      <span>View Details</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
