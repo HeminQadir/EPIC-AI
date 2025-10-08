@@ -26,8 +26,8 @@ export default function NeuralNetworkBackground() {
     window.addEventListener('resize', setCanvasSize);
 
     const particles: Particle[] = [];
-    const particleCount = 80;
-    const maxDistance = 150;
+    const particleCount = 150;
+    const maxDistance = 180;
 
     // Create particles
     for (let i = 0; i < particleCount; i++) {
