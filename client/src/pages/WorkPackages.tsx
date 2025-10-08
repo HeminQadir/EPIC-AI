@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Package, Database, Brain, Users, ArrowRight } from "lucide-react";
+import wpsFigure from "@assets/WPS_1759919566154.png";
 
 const workPackages = [
   {
@@ -38,6 +39,24 @@ export default function WorkPackages() {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Our research is organized into four interconnected work packages, each addressing critical aspects of the project
           </p>
+        </div>
+
+        <div className="mb-16">
+          <div className="bg-background rounded-lg p-8 shadow-sm">
+            <div className="flex justify-center mb-8 bg-background p-6 rounded-lg">
+              <img
+                src={wpsFigure}
+                alt="Work Packages Overview - WP1 through WP5 showing project structure and relationships"
+                className="w-full max-w-5xl rounded-md mix-blend-multiply dark:mix-blend-lighten"
+                data-testid="img-work-packages-overview"
+              />
+            </div>
+            <div className="prose prose-gray dark:prose-invert max-w-none">
+              <p className="text-foreground leading-relaxed">
+                The proposed work is divided into five work packages (WPs) (see Fig. 2). WP1 outlines studies for the development of a multi-grading rule-based EEG pattern-recognition algorithm adjusting for sedation effects to reduce uncertainty in neurophysiological interpretation (H.1-3) leading to reduce both FPR and FNR for the considered type of neuro prognostication. WP2 details extension of the proposed multi-graded rule-based EEG assessment algorithm (WP1) for multi-modal scenarios (H.4), using a model combining EEG pattern recognition, NSE and standardized neurological scoring (GCS and brain stem reflexes). WP3 is a prospective feasibility study where early WLST is avoided while time-series assessment of EEG patterns after sedation-stop are added, while predictions are kept blinded to the treatment team (H.5). Further, design an AI framework that makes predictions over time, which are phrased in terms of either time-to-event outcomes (time-to-awakening or non-awakening). WP4 is for dissemination, communication, and exploitation. WP5 is for project management.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
