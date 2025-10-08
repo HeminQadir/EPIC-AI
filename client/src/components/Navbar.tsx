@@ -35,7 +35,7 @@ export default function Navbar() {
               <Link key={item.path} href={item.path} data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                 <Button
                   variant="ghost"
-                  className={location === item.path ? "bg-foreground/15" : ""}
+                  className={location === item.path ? "bg-accent" : ""}
                 >
                   {item.label}
                 </Button>
@@ -60,7 +60,7 @@ export default function Navbar() {
               <Link key={item.path} href={item.path}>
                 <Button
                   variant="ghost"
-                  className={`w-full justify-start ${location === item.path ? "bg-foreground/15" : ""}`}
+                  className={`w-full justify-start ${location === item.path ? "bg-accent" : ""}`}
                   onClick={() => setMobileMenuOpen(false)}
                   data-testid={`link-mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
                 >
