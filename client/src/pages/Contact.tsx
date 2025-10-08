@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    content: "Medical Research Center\n123 Research Drive, Suite 400\nCity, State 12345"
+    content: "Rikshospitalet, Oslo University Hospital\nSognsvannsveien 20\n0372 Oslo, Norway"
   },
   {
     icon: Clock,
@@ -89,6 +89,29 @@ export default function Contact() {
               </CardContent>
             </Card>
           </div>
+        </div>
+
+        <div className="mt-12 max-w-6xl mx-auto">
+          <Card>
+            <CardHeader>
+              <CardTitle>Find Us</CardTitle>
+            </CardHeader>
+            <CardContent className="p-0">
+              <div className="w-full h-[400px] rounded-b-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d10.7186!3d59.9464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e4e70d8b1a1f1a1!2sRikshospitalet!5e0!3m2!1sen!2sno!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Rikshospitalet Location Map"
+                  data-testid="map-location"
+                />
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
