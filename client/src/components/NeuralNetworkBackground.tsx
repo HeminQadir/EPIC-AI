@@ -26,8 +26,22 @@ export default function NeuralNetworkBackground() {
     window.addEventListener('resize', setCanvasSize);
 
     const particles: Particle[] = [];
-    const particleCount = 150;
-    const maxDistance = 180;
+    
+    // Responsive particle count based on screen size
+    const getParticleCount = () => {
+      if (window.innerWidth < 640) return 40; // Mobile
+      if (window.innerWidth < 1024) return 80; // Tablet
+      return 150; // Desktop
+    };
+    
+    const getMaxDistance = () => {
+      if (window.innerWidth < 640) return 120; // Mobile
+      if (window.innerWidth < 1024) return 150; // Tablet
+      return 180; // Desktop
+    };
+    
+    const particleCount = getParticleCount();
+    const maxDistance = getMaxDistance();
 
     // Create particles
     for (let i = 0; i < particleCount; i++) {
