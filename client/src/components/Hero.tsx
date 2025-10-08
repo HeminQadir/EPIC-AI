@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
         
         <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-7xl tracking-tight mb-6 max-w-4xl mx-auto">
-          Advanced Neurological Outcome Assessment
+          <span className="text-blue-600 dark:text-blue-400">EPIC AI:</span> Advanced Neurological Outcome Assessment
         </h1>
         
         <p className="text-xl text-blue-600 dark:text-blue-400 mb-4">
@@ -42,7 +42,7 @@ export default function Hero() {
         </p>
         
         <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
-          <span className="font-semibold">EPIC AI:</span> Enhancing prognosis for comatose cardiac arrest survivors through AI-powered EEG analysis and multimodal prognostication
+          Enhancing prognosis for comatose cardiac arrest survivors through AI-powered EEG analysis and multimodal prognostication
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
