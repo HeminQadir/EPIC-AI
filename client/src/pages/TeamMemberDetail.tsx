@@ -52,7 +52,7 @@ const teamMembersData: Record<string, any> = {
     name: "Naimahmed Nesaragi",
     role: "AI Researcher",
     affiliation: "Intervention Centre, Oslo University Hospital",
-    expertise: ["Machine Learning", "Signal Processing"],
+    expertise: ["AI", "Machine Learning", "Signal Processing"],
     email: "naimahmed.nesaragi@oslo-universitetssykehus.no",
     bio: "Naimahmed Nesaragi is an AI Researcher at the Intervention Centre, Oslo University Hospital. His expertise in machine learning and signal processing contributes to the development of advanced analytical methods for medical data.",
     links: {

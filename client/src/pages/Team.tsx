@@ -31,7 +31,7 @@ const teamMembers = [
     name: "Naimahmed Nesaragi",
     role: "AI Researcher",
     affiliation: "Intervention Centre, Oslo University Hospital",
-    expertise: ["Machine Learning", "Signal Processing"],
+    expertise: ["AI", "Machine Learning", "Signal Processing"],
     email: "naimahmed.nesaragi@oslo-universitetssykehus.no"
   },
   {
