@@ -1,4 +1,5 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
+import { useEffect } from "react";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -17,21 +18,34 @@ import Results from "@/pages/Results";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
 
+function ScrollToTop() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+}
+
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/overview/:id" component={OverviewDetail} />
-      <Route path="/team" component={Team} />
-      <Route path="/team/:id" component={TeamMemberDetail} />
-      <Route path="/work-packages" component={WorkPackages} />
-      <Route path="/work-packages/:id" component={WorkPackageDetail} />
-      <Route path="/milestones" component={Milestones} />
-      <Route path="/publications" component={Publications} />
-      <Route path="/results" component={Results} />
-      <Route path="/contact" component={Contact} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/overview/:id" component={OverviewDetail} />
+        <Route path="/team" component={Team} />
+        <Route path="/team/:id" component={TeamMemberDetail} />
+        <Route path="/work-packages" component={WorkPackages} />
+        <Route path="/work-packages/:id" component={WorkPackageDetail} />
+        <Route path="/milestones" component={Milestones} />
+        <Route path="/publications" component={Publications} />
+        <Route path="/results" component={Results} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
