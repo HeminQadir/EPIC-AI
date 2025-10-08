@@ -21,17 +21,17 @@ const teamMembersData: Record<string, any> = {
       orcid: "https://orcid.org/0000-0000-0000-0000"
     }
   },
-  "robert-chen": {
-    name: "Dr. Robert Chen",
+  "kristian-nilsen": {
+    name: "Kristian Bernard Nilsen",
     role: "Co-Investigator",
-    affiliation: "Department of Critical Care Medicine",
-    expertise: ["Cardiac Arrest", "Intensive Care", "Clinical Research"],
-    email: "r.chen@example.edu",
-    bio: "Dr. Robert Chen brings extensive clinical expertise in critical care medicine and cardiac arrest resuscitation. His work focuses on improving patient outcomes through evidence-based protocols and advanced monitoring techniques. Dr. Chen has been instrumental in establishing multicenter collaborations for this research initiative.",
+    affiliation: "Department of Neurology, OUS",
+    expertise: ["Clinical Neurophysiology", "Applied Neurophysiology", "AI in Healthcare"],
+    email: "kristian.nilsen@oslo-universitetssykehus.no",
+    bio: "Kristian Bernard Nilsen is leading the research group for applied neurophysiology and head of section for Clinical Neurophysiology, Department of Neurology at OUS. He is currently leading a large national study for development of a national infrastructure for AI studies in clinical neurophysiology.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://university.edu/faculty/robert-chen"
+      institutionPage: "https://oslo-universitetssykehus.no"
     }
   },
   "emily-anderson": {

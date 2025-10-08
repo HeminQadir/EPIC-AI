@@ -11,12 +11,12 @@ const teamMembers = [
     email: "kjetil.sunde@medisin.uio.no"
   },
   {
-    id: "robert-chen",
-    name: "Dr. Robert Chen",
+    id: "kristian-nilsen",
+    name: "Kristian Bernard Nilsen",
     role: "Co-Investigator",
-    affiliation: "Department of Critical Care Medicine",
-    expertise: ["Cardiac Arrest", "Intensive Care", "Clinical Research"],
-    email: "r.chen@example.edu"
+    affiliation: "Department of Neurology, OUS",
+    expertise: ["Clinical Neurophysiology", "Applied Neurophysiology", "AI in Healthcare"],
+    email: "kristian.nilsen@oslo-universitetssykehus.no"
   },
   {
     id: "emily-anderson",
