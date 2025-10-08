@@ -31,7 +31,7 @@ const features = [
 
 export default function ProjectOverviewSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section id="project-overview" className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-heading font-semibold text-3xl lg:text-5xl mb-4">Project Overview</h2>

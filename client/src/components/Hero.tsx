@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain } from "lucide-react";
 
@@ -25,13 +26,17 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="group" data-testid="button-learn-more">
-            Learn More
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button size="lg" variant="outline" data-testid="button-view-publications">
-            View Publications
-          </Button>
+          <Link href="/#project-overview">
+            <Button size="lg" className="group" data-testid="button-learn-more">
+              Learn More
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
+          <Link href="/publications">
+            <Button size="lg" variant="outline" data-testid="button-view-publications">
+              View Publications
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
