@@ -3,6 +3,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain } from "lucide-react";
 
 export default function Hero() {
+  const scrollToOverview = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById('project-overview');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
@@ -26,12 +34,10 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link href="/#project-overview">
-            <Button size="lg" className="group" data-testid="button-learn-more">
-              Learn More
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
+          <Button size="lg" className="group" onClick={scrollToOverview} data-testid="button-learn-more">
+            Learn More
+            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          </Button>
           <Link href="/publications">
             <Button size="lg" variant="outline" data-testid="button-view-publications">
               View Publications
