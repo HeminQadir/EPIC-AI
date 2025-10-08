@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NeuralNetworkBackground from "@/components/NeuralNetworkBackground";
 import Home from "@/pages/Home";
 import OverviewDetail from "@/pages/OverviewDetail";
 import Team from "@/pages/Team";
@@ -53,7 +54,8 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <div className="flex flex-col min-h-screen">
+        <NeuralNetworkBackground />
+        <div className="flex flex-col min-h-screen relative z-10">
           <Navbar />
           <main className="flex-1">
             <Router />
