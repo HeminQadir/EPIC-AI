@@ -48,13 +48,13 @@ const teamMembersData: Record<string, any> = {
       orcid: "https://orcid.org/0000-0000-0000-0001"
     }
   },
-  "naim": {
-    name: "Dr. Naim",
+  "naimahmed-nesaragi": {
+    name: "Naimahmed Nesaragi",
     role: "AI Researcher",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Signal Processing"],
-    email: "naim@oslo-universitetssykehus.no",
-    bio: "Dr. Naim is an AI Researcher at the Intervention Centre, Oslo University Hospital. His expertise in machine learning and signal processing contributes to the development of advanced analytical methods for medical data.",
+    email: "naimahmed.nesaragi@oslo-universitetssykehus.no",
+    bio: "Naimahmed Nesaragi is an AI Researcher at the Intervention Centre, Oslo University Hospital. His expertise in machine learning and signal processing contributes to the development of advanced analytical methods for medical data.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",

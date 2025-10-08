@@ -27,12 +27,12 @@ const teamMembers = [
     email: "hemin.qadir@oslo-universitetssykehus.no"
   },
   {
-    id: "naim",
-    name: "Dr. Naim",
+    id: "naimahmed-nesaragi",
+    name: "Naimahmed Nesaragi",
     role: "AI Researcher",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Signal Processing"],
-    email: "naim@oslo-universitetssykehus.no"
+    email: "naimahmed.nesaragi@oslo-universitetssykehus.no"
   },
   {
     id: "haukur-gudmundsson",
