@@ -16,6 +16,16 @@ const publications = [
     tags: ["EEG", "Transformer", "Neurological Outcomes", "Machine Learning", "Signal Processing"]
   },
   {
+    title: "A Multi-channel EEG Data Analysis for Poor Neuro-prognostication in Comatose Patients with Self and Cross-channel Attention Mechanism",
+    authors: "Qadir H.A., Nesaragi N., Halvorsen P.S., Balasingham I.",
+    journal: "2023 Computing in Cardiology (CinC), vol. 50, pp. 1-4. IEEE",
+    year: "2023",
+    abstract: "This work investigates the predictive potential of bipolar electroencephalogram (EEG) recordings towards efficient prediction of poor neurological outcomes. A retrospective design using a hybrid deep learning approach is utilized to optimize an objective function aiming for high specificity. A multi-channel EEG array of 18 bipolar channel pairs from a randomly selected 5-minute segment in an hour is kept. The feature encoder extricates local temporal and spatial features, while the following position encoding and attention mechanisms attempt to capture global temporal dependencies.",
+    doi: "10.48550/arXiv.2310.03756",
+    pdfUrl: "https://arxiv.org/pdf/2310.03756",
+    tags: ["EEG", "Attention Mechanism", "Neuro-prognostication", "Deep Learning", "Comatose Patients"]
+  },
+  {
     title: "AI-Enhanced EEG Analysis for Neurological Outcome Prediction in Cardiac Arrest Survivors",
     authors: "Mitchell S., Chen R., Anderson E., Torres M.",
     journal: "Journal of Neurocritical Care",
