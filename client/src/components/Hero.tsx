@@ -37,11 +37,11 @@ export default function Hero() {
           <span className="text-blue-600 dark:text-blue-400">EPIC AI:</span> Advanced Neurological Outcome Assessment
         </h1>
         
-        <p className="text-3xl text-blue-600 dark:text-blue-400 mb-4">
+        <p className="text-lg sm:text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-4">
           This is an open project funded by Helse Sør-Øst RHF, Norway
         </p>
         
-        <p className="text-3xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
+        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
           Enhancing prognosis for comatose cardiac arrest survivors through AI-powered EEG analysis and multimodal prognostication
         </p>
 
