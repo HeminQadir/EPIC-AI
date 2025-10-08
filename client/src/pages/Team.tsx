@@ -3,6 +3,7 @@ import TeamMember from "@/components/TeamMember";
 //todo: remove mock functionality
 const teamMembers = [
   {
+    id: "sarah-mitchell",
     name: "Dr. Sarah Mitchell",
     role: "Principal Investigator",
     affiliation: "Department of Neurology, University Medical Center",
@@ -10,6 +11,7 @@ const teamMembers = [
     email: "s.mitchell@example.edu"
   },
   {
+    id: "robert-chen",
     name: "Dr. Robert Chen",
     role: "Co-Investigator",
     affiliation: "Department of Critical Care Medicine",
@@ -17,6 +19,7 @@ const teamMembers = [
     email: "r.chen@example.edu"
   },
   {
+    id: "emily-anderson",
     name: "Dr. Emily Anderson",
     role: "Research Scientist",
     affiliation: "AI Research Lab, University Medical Center",
@@ -24,6 +27,7 @@ const teamMembers = [
     email: "e.anderson@example.edu"
   },
   {
+    id: "michael-torres",
     name: "Dr. Michael Torres",
     role: "Clinical Researcher",
     affiliation: "Department of Neurology",
@@ -31,6 +35,7 @@ const teamMembers = [
     email: "m.torres@example.edu"
   },
   {
+    id: "lisa-wang",
     name: "Dr. Lisa Wang",
     role: "Postdoctoral Fellow",
     affiliation: "Neuroscience Research Institute",
@@ -38,6 +43,7 @@ const teamMembers = [
     email: "l.wang@example.edu"
   },
   {
+    id: "james-kim",
     name: "Dr. James Kim",
     role: "Research Associate",
     affiliation: "Department of Biomedical Engineering",
