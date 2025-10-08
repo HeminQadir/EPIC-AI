@@ -86,7 +86,7 @@ export default function Contact() {
             <CardContent className="p-0">
               <div className="w-full h-[400px] rounded-b-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d10.7186!3d59.9464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e4e70d8b1a1f1a1!2sRikshospitalet!5e0!3m2!1sen!2sno!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1234567890!2d10.7186!3d59.9464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f16!3m3!1m2!1s0x46416e61f267f039%3A0x7e4e70d8b1a1f1a1!2sRikshospitalet!5e0!3m2!1sen!2sno!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
