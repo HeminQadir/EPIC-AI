@@ -53,8 +53,8 @@ export default function NeuralNetworkBackground() {
 
         // Draw particle
         ctx.beginPath();
-        ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(100, 100, 100, 0.3)';
+        ctx.arc(particle.x, particle.y, 3, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(100, 100, 100, 0.6)';
         ctx.fill();
       });
 
@@ -69,9 +69,9 @@ export default function NeuralNetworkBackground() {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            const opacity = (1 - distance / maxDistance) * 0.15;
+            const opacity = (1 - distance / maxDistance) * 0.3;
             ctx.strokeStyle = `rgba(100, 100, 100, ${opacity})`;
-            ctx.lineWidth = 1;
+            ctx.lineWidth = 1.5;
             ctx.stroke();
           }
         }
@@ -91,7 +91,7 @@ export default function NeuralNetworkBackground() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ opacity: 0.4 }}
+      style={{ opacity: 0.7 }}
     />
   );
 }
