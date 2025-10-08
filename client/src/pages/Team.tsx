@@ -3,12 +3,12 @@ import TeamMember from "@/components/TeamMember";
 //todo: remove mock functionality
 const teamMembers = [
   {
-    id: "sarah-mitchell",
-    name: "Dr. Sarah Mitchell",
-    role: "Principal Investigator",
-    affiliation: "Department of Neurology, University Medical Center",
-    expertise: ["EEG Analysis", "Neurocritical Care", "AI Methods"],
-    email: "s.mitchell@example.edu"
+    id: "kjetil-sunde",
+    name: "Dr. Kjetil Sunde",
+    role: "Project Leader",
+    affiliation: "Dept of Anesthesia and Intensive Care Medicine, OUS and Institute of Clinical Medicine, UiO",
+    expertise: ["Cardiac Arrest", "Post-Resuscitation Care", "Neurocritical Care"],
+    email: "kjetil.sunde@medisin.uio.no"
   },
   {
     id: "robert-chen",

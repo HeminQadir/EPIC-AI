@@ -7,17 +7,17 @@ import { SiLinkedin, SiGooglescholar, SiOrcid } from "react-icons/si";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
-  "sarah-mitchell": {
-    name: "Dr. Sarah Mitchell",
-    role: "Principal Investigator",
-    affiliation: "Department of Neurology, University Medical Center",
-    expertise: ["EEG Analysis", "Neurocritical Care", "AI Methods"],
-    email: "s.mitchell@example.edu",
-    bio: "Dr. Sarah Mitchell is a leading expert in neurocritical care with over 15 years of experience in EEG analysis and neurological outcome assessment. Her research focuses on developing AI-powered diagnostic tools for comatose patients following cardiac arrest. She has published extensively on multimodal prognostication and leads the interdisciplinary team driving this groundbreaking research project.",
+  "kjetil-sunde": {
+    name: "Dr. Kjetil Sunde",
+    role: "Project Leader",
+    affiliation: "Dept of Anesthesia and Intensive Care Medicine, OUS and Institute of Clinical Medicine, UiO",
+    expertise: ["Cardiac Arrest", "Post-Resuscitation Care", "Neurocritical Care"],
+    email: "kjetil.sunde@medisin.uio.no",
+    bio: "Dr. Kjetil Sunde is a professor at the Department of Anesthesia and Intensive Care Medicine, OUS and the Institute of Clinical Medicine, UiO. He is heading the \"Brain-Heart\" research group and works in the surgical and neurosurgical ICU at OUS Ullevål. He has extensive research experience in experimental and clinical cardiac arrest and post-resuscitation care studies, and was the main supervisor of NORCAST. He will be the project leader and responsible for WP3.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://university.edu/faculty/sarah-mitchell",
+      institutionPage: "https://www.med.uio.no/klinmed/english/people/aca/kjetils/",
       orcid: "https://orcid.org/0000-0000-0000-0000"
     }
   },
