@@ -1,4 +1,5 @@
 import TeamMember from "@/components/TeamMember";
+import heminImage from "@assets/hEMIN_1760013406099.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -20,11 +21,12 @@ const teamMembers = [
   },
   {
     id: "hemin-qadir",
-    name: "Dr. Hemin Qadir",
+    name: "Hemin Ali Qadir",
     role: "Senior AI Scientist",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
-    email: "hemin.qadir@oslo-universitetssykehus.no"
+    email: "hemin.qadir@oslo-universitetssykehus.no",
+    image: heminImage
   },
   {
     id: "naimahmed-nesaragi",
