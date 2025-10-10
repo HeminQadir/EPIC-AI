@@ -79,22 +79,22 @@ The system has been trained on extensive datasets from multiple medical centers,
     summary: "Reduce ethical dilemmas and improve treatment decisions by mitigating uncertainty in prognostic grey areas.",
     content: `The clinical impact of this research extends far beyond technical innovation—it addresses fundamental challenges in critical care medicine that affect patients, families, and healthcare systems daily.
 
-Improved Patient Care:
+**1. Improved Patient Care:**
 • More accurate prognostication enables personalized treatment planning
 • Earlier identification of recovery potential allows for optimized rehabilitation timing
 • Reduction in unnecessary prolongation of futile care
 • Better allocation of ICU resources to patients most likely to benefit
 
-Support for Clinical Decision-Making:
+**2. Support for Clinical Decision-Making:**
 • Provides evidence-based tools to supplement clinical judgment
 • Reduces the cognitive burden on intensivists during complex decision-making
 • Facilitates more confident discussions with families about prognosis
 • Helps navigate the ethical complexities of life-sustaining treatment decisions
 
-Reducing Prognostic Uncertainty:
+**3. Reducing Prognostic Uncertainty:**
 Current prognostic markers leave approximately 30-40% of patients in grey areas where outcome prediction is highly uncertain. Our algorithms aim to reduce this proportion by more than half, providing clearer guidance for the majority of cases while appropriately flagging those requiring additional evaluation.
 
-Healthcare System Benefits:
+**4. Healthcare System Benefits:**
 • Optimized ICU bed utilization
 • Reduced overall healthcare costs through more efficient resource allocation
 • Standardized assessment protocols that can be implemented across institutions
@@ -145,11 +145,19 @@ export default function OverviewDetail() {
             </CardHeader>
             <CardContent>
               <div className="prose prose-slate dark:prose-invert max-w-none">
-                {section.content.split('\n\n').map((paragraph: string, index: number) => (
-                  <p key={index} className="text-foreground leading-relaxed mb-4 whitespace-pre-line">
-                    {paragraph}
-                  </p>
-                ))}
+                {section.content.split('\n\n').map((paragraph: string, index: number) => {
+                  const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                  return (
+                    <p key={index} className="text-foreground leading-relaxed mb-4 whitespace-pre-line">
+                      {parts.map((part, i) => {
+                        if (part.startsWith('**') && part.endsWith('**')) {
+                          return <strong key={i}>{part.slice(2, -2)}</strong>;
+                        }
+                        return part;
+                      })}
+                    </p>
+                  );
+                })}
               </div>
             </CardContent>
           </Card>
