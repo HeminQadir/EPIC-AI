@@ -24,46 +24,6 @@ const publications = [
     doi: "10.48550/arXiv.2310.03756",
     pdfUrl: "https://arxiv.org/pdf/2310.03756",
     tags: ["EEG", "Attention Mechanism", "Neuro-prognostication", "Deep Learning", "Comatose Patients"]
-  },
-  {
-    title: "AI-Enhanced EEG Analysis for Neurological Outcome Prediction in Cardiac Arrest Survivors",
-    authors: "Mitchell S., Chen R., Anderson E., Torres M.",
-    journal: "Journal of Neurocritical Care",
-    year: "2024",
-    abstract: "This study presents a novel AI-powered approach for distinguishing between reversible sedation effects and irreversible brain damage in comatose cardiac arrest patients using longitudinal EEG data analysis.",
-    doi: "10.1234/jnc.2024.001",
-    pdfUrl: "#",
-    tags: ["EEG", "Cardiac Arrest", "AI", "Prognosis"]
-  },
-  {
-    title: "Multimodal Prognostication in Post-Anoxic Coma: A Systematic Review",
-    authors: "Wang L., Mitchell S., Kim J.",
-    journal: "Critical Care Medicine",
-    year: "2024",
-    abstract: "A comprehensive review of current prognostic markers in post-anoxic coma, highlighting the challenges of sedation interference and the need for improved assessment tools.",
-    doi: "10.1234/ccm.2024.015",
-    pdfUrl: "#",
-    tags: ["Review", "Prognostication", "Post-Anoxic Coma"]
-  },
-  {
-    title: "Rule-Based Algorithm Development for EEG Pattern Recognition in ICU Settings",
-    authors: "Anderson E., Kim J., Chen R.",
-    journal: "IEEE Transactions on Biomedical Engineering",
-    year: "2023",
-    abstract: "Development of standardized rule-based algorithms for automated EEG pattern recognition, focusing on differentiation between malignant patterns and sedation effects.",
-    doi: "10.1234/tbme.2023.089",
-    pdfUrl: "#",
-    tags: ["Algorithm", "EEG", "Pattern Recognition"]
-  },
-  {
-    title: "Clinical Validation of AI-Based Prognostic Tools in Cardiac Arrest Outcomes",
-    authors: "Torres M., Mitchell S., Wang L., Chen R.",
-    journal: "Neurocritical Care",
-    year: "2023",
-    abstract: "A prospective validation study of AI-based prognostic tools in a multicenter cohort of cardiac arrest survivors, demonstrating improved accuracy over traditional methods.",
-    doi: "10.1234/ncc.2023.042",
-    pdfUrl: "#",
-    tags: ["Clinical Trial", "Validation", "AI"]
   }
 ];
 
