@@ -9,6 +9,7 @@ import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 import perImage from "@assets/Steinar_1762165340846.jpg";
 import lineImage from "@assets/Line-Besos-Ulvin_web_1762165590836.jpg";
+import christoferImage from "@assets/anderchr_1762169871360.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -104,6 +105,15 @@ const teamMembers = [
     email: "p.s.halvorsen@medisin.uio.no",
     secondaryEmail: "sthalvor@ous-hf.no",
     image: perImage
+  },
+  {
+    id: "christofer-lundqvist",
+    name: "Prof. Christofer Lundqvist",
+    role: "Consultant Neurologist, Professor II",
+    affiliation: "Akershus University Hospital (AHUS)",
+    expertise: ["Neurology", "Prognostication", "Long-term Outcomes", "Neurophysiology"],
+    email: "a.c.lundqvist@medisin.uio.no",
+    image: christoferImage
   }
 ];
 

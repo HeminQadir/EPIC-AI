@@ -15,6 +15,7 @@ import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 import perImage from "@assets/Steinar_1762165340846.jpg";
 import lineImage from "@assets/Line-Besos-Ulvin_web_1762165590836.jpg";
+import christoferImage from "@assets/anderchr_1762169871360.jpg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -164,6 +165,22 @@ const teamMembersData: Record<string, any> = {
     bio: "Dr. Line Bédos Ulvin is a Consultant and PhD student at Oslo University Hospital Department of Neurology. Her research focuses on epilepsy and status epilepticus, with extensive publications on the predictive performances of scoring systems, treatment approaches, and clinical outcomes in status epilepticus patients. Her work includes validation of EEG criteria for nonconvulsive status epilepticus and evaluation of modern treatment strategies in adult patients.",
     links: {
       ousPage: "https://www.ous-research.no/home/anephys/Group-members/22790"
+    }
+  },
+  "christofer-lundqvist": {
+    name: "Prof. Christofer Lundqvist",
+    role: "Consultant Neurologist, Professor II",
+    affiliation: "Akershus University Hospital (AHUS)",
+    secondaryAffiliation: "Professor at Health Services Research Unit, Institute of Clinical Medicine, Campus AHUS, University of Oslo",
+    expertise: ["Neurology", "Prognostication", "Long-term Outcomes", "Neurophysiology"],
+    email: "a.c.lundqvist@medisin.uio.no",
+    image: christoferImage,
+    bio: "Prof. Christofer Lundqvist is a consultant neurologist at Akershus University Hospital (AHUS) and Professor II at the Health Services Research Unit, Institute of Clinical Medicine, Campus AHUS, University of Oslo. He received his PhD in Medical Neurochemistry from Lund University, Sweden in 1994 and has been a specialist in Neurology since 2000 (Norway and Sweden).\n\nHe is a co-founder and designer of NORCAST and has extensive research experience in prognostication and long-term outcome after cardiac arrest. His research interests include neurology, pain conditions (especially headache), addiction, neuropharmacology, and health services adaptation to vulnerable user groups. He will provide necessary clinical support on neurophysiology to enhance the quality of AI frameworks in the EPIC-AI project.\n\nHe has published extensively on cardiac arrest outcomes, cognitive function, health-related quality of life, and pain management, with particular expertise in long-term follow-up studies of out-of-hospital cardiac arrest survivors.",
+    researchProfile: ["Prognostication After Cardiac Arrest", "Long-term Outcomes", "Neurophysiology", "Pain Management", "Cognitive Function"],
+    links: {
+      linkedin: "https://www.linkedin.com/in/christofer-lundqvist-54a94919/",
+      researchGate: "https://www.researchgate.net/profile/Christofer-Lundqvist/2",
+      institutionPage: "https://www.med.uio.no/klinmed/personer/vit/anderchr/"
     }
   }
 };
