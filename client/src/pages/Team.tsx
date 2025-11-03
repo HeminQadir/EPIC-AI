@@ -46,10 +46,10 @@ const teamMembers = [
   {
     id: "haukur-gudmundsson",
     name: "Dr. Haukur Tyr Gudmundsson",
-    role: "PhD Student",
+    role: "Medical Specialist, PhD Student",
     affiliation: "Oslo University Hospital",
     expertise: ["Neuroscience", "Neurophysiology"],
-    email: "haukur.gudmundsson@oslo-universitetssykehus.no"
+    email: "haugud@ous-hf.no"
   },
   {
     id: "henning-wimmer",

@@ -74,11 +74,11 @@ const teamMembersData: Record<string, any> = {
   },
   "haukur-gudmundsson": {
     name: "Dr. Haukur Tyr Gudmundsson",
-    role: "PhD Student",
+    role: "Medical Specialist, PhD Student",
     affiliation: "Oslo University Hospital",
     expertise: ["Neuroscience", "Neurophysiology"],
-    email: "haukur.gudmundsson@oslo-universitetssykehus.no",
-    bio: "Dr. Haukur Tyr Gudmundsson is a PhD student at Oslo University Hospital with a background in neuroscience and neurophysiology. His research focuses on advancing our understanding of brain function and neurological outcomes.",
+    email: "haugud@ous-hf.no",
+    bio: "Dr. Haukur Tyr Gudmundsson is a Medical Specialist and PhD student at Oslo University Hospital. He is a PhD student in the EPIC-AI project. His expertise in neuroscience and neurophysiology contributes to advancing our understanding of brain function and neurological outcomes.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
