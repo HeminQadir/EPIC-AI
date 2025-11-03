@@ -1,0 +1,38 @@
+WP3: Feasibility of using serial EEGs (after terminated sedation) to improve differentiation
+of sedation from established brain damage - A prospective study in the ICU; Leader: Sunde;
+Contributors: Lundqvist, Andersen, Qadir, Nesaragi; Personnel: Postdoc, Ph.D., Soft. Developer
+Aims and Objectives: Collection of serial EEGs time-locked to termination of sedation and through-
+out the awakening process. Clinical data on awakening, sedation level, and prognostic predictors will
+be collected in parallel.
+Task 3.1: Study Design and Feasibility Evaluation
+A project-specific dataset will be established prospectively over one year in the ICU with daily EEGs
+collected in comatose CA survivors until the patient is either awake or dead. In addition to EEGs,
+detailed medication data will be collected by access to the ICU’s electronic clinical information sys-
+tem. Other prognostic markers will be collected (NSE, GCS, daily brainstem reflexes, SSEP, and
+brain CT/MRI when available). The EEGs will be assessed using the algorithms developed in WP1,2.
+Results of the daily EEGs performed as part of the study will be blinded to the treating physicians
+except for evidence of ongoing epileptic activity. Routine EEGs performed on clinical indication will,
+of course, not be blinded. Based on ICU admission data and our experience from the NORCAST we
+suggest it to be possible to collect serial EEG data from 20-30 patients in one year. With a mean of
+5 serial EEGs per patient this will give 100-150 EEGs.
+Feasibility evaluation is performed by qualitative and quantitative research design aiming to address
+feasibility for safe implementation of AI. Qualitative retrospective focus group interviews of ICU physi-
+cians and attending staff will answer the question of whether the rule-based serial EEG assessment
+has the potential to affect physicians’ trust and confidence to prognostic evaluations. The logistics and
+feasibility of implementation of the system in further large-scale prospective studies and clinical rou-
+tine will also be addressed by Soft. developer. Analyses will be by systematic text condensation [22].
+Quantitatively we will estimate whether the addition of algorithm-based serial EEG assessment is
+likely to strengthen clinicians’ trust and accuracy in outcome predictions and whether it may affect
+WLST decisions compared to today’s standard. This will be done by comparing actual clinical deci-
+sions vs. retrospective consensus evaluation using the additional data from the serial EEGs.
+Task 3.2: AI framework for early prediction of time to event
+An AI framework is designed that can learn to find distinguishable patterns for both awakening and
+non-awakening patients from the serial EEGs collected in Task 3.1 to predict time-to-event (awaken-
+ing or non-awakening). In this task, we will expand the AI model from WP1, 2 to predict probabilities
+of patient awakening or mortality across various time intervals (e.g., 24, 48, or 72 hours). Temporal
+markers will be transformed into time-based probability distributions, serving as labels to fine-tune
+the AI model from WP1, 2. This approach compels the AI model to discover relevant patterns across
+data modalities and distinguish distinctive characteristics within the learned features of both groups.
+Expected results and deliverables: D3.1: Establish feasibility of introducing automated serial EEG as-
+sessments in future prospective studies and clinical practice (M30); D3.2:improve the rule-based EEG algo-
+rithm from WP1 and WP2 (M36); 3 Journal papers (Critical Care Medicine, Resuscitation-Elsevier, JAMIA).

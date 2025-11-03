@@ -101,62 +101,45 @@ Target Publications:
 • 2 Journal papers`
   },
   "wp3-clinical-validation": {
-    title: "WP3: Clinical Validation",
+    title: "WP3: Serial EEG Feasibility Study",
     icon: Users,
-    summary: "Prospective validation of AI algorithms in real-world clinical settings across multiple intensive care units.",
-    content: `This work package translates the AI algorithms developed in WP2 into clinical practice through rigorous prospective validation in real-world intensive care settings.
+    summary: "Prospective feasibility study using serial EEGs after terminated sedation to improve differentiation of sedation from established brain damage in ICU.",
+    leader: "Sunde",
+    contributors: "Lundqvist, Andersen, Qadir, Nesaragi",
+    personnel: "Postdoc, Ph.D., Software Developer",
+    content: `Aims and Objectives:
+Collect serial EEGs time-locked to termination of sedation throughout the awakening process. Clinical data on awakening, sedation level, and prognostic predictors will be collected in parallel.
 
-Primary Objectives:
-• Validate algorithm performance in prospective cohorts across multiple centers
-• Assess clinical utility and impact on decision-making
-• Evaluate algorithm robustness across diverse patient populations
-• Identify implementation barriers and facilitators
+Task 3.1: Study Design and Feasibility Evaluation
 
-Validation Study Design:
-The validation employs a multi-center prospective observational design with the following characteristics:
+Study Design:
 
-Participating Centers:
-- Minimum 5 intensive care units from different regions
-- Mix of academic and community hospitals
-- Diverse patient demographics and clinical practices
-- Varying levels of neurological expertise
+Establish a prospective dataset over one year in ICU with daily EEGs collected in comatose CA survivors until the patient is either awake or dead. In addition to EEGs, collect:
+• Detailed medication data from ICU's electronic clinical information system
+• Other prognostic markers (NSE, GCS, daily brainstem reflexes, SSEP, brain CT/MRI when available)
 
-Patient Enrollment:
-Consecutive adult cardiac arrest survivors requiring ICU admission with continuous EEG monitoring. Inclusion criteria ensure representativeness while exclusion criteria maintain safety and data quality.
+EEGs will be assessed using algorithms developed in WP1 and WP2. Results of daily EEGs will be blinded to treating physicians except for evidence of ongoing epileptic activity. Expected data collection: 20-30 patients with mean of 5 serial EEGs per patient (100-150 total EEGs).
 
-Validation Metrics:
+Feasibility Evaluation:
 
-Performance Metrics:
-- Discrimination (AUC-ROC, precision-recall curves)
-- Calibration (Brier score, calibration plots)
-- Clinical utility (decision curve analysis)
-- Comparative analysis vs. standard prognostic markers
+Qualitative approach: Retrospective focus group interviews of ICU physicians and staff to assess whether rule-based serial EEG assessment affects trust and confidence in prognostic evaluations. Address logistics and feasibility of system implementation for large-scale studies and clinical routine through systematic text condensation.
 
-Implementation Metrics:
-- Time from EEG recording to prediction
-- Algorithm availability and uptime
-- User satisfaction and acceptance
-- Integration with existing workflows
+Quantitative approach: Estimate whether algorithm-based serial EEG assessment strengthens clinicians' trust and accuracy in outcome predictions and affects WLST decisions by comparing actual clinical decisions vs. retrospective consensus evaluation using serial EEG data.
 
-Clinical Impact Assessment:
-The study prospectively tracks how algorithm predictions influence:
-- Treatment decisions (continuation vs. withdrawal of life support)
-- Resource allocation (ICU length of stay, rehabilitation planning)
-- Family counseling and shared decision-making
-- Clinician confidence in prognostication
+Task 3.2: AI Framework for Early Prediction of Time to Event
 
-Safety Monitoring:
-A dedicated safety monitoring board reviews all cases where algorithm predictions differ significantly from clinical judgment, ensuring patient safety remains paramount.
+Design an AI framework to identify distinguishable patterns from serial EEGs for both awakening and non-awakening patients to predict time-to-event (awakening or non-awakening).
 
-Subgroup Analyses:
-Pre-specified analyses examine algorithm performance across:
-- Different arrest etiologies (cardiac vs. non-cardiac)
-- Temperature management strategies
-- Age groups and comorbidity profiles
-- Various sedation protocols
+Expand the AI model from WP1 and WP2 to predict probabilities of patient awakening or mortality across various time intervals (e.g., 24, 48, or 72 hours). Transform temporal markers into time-based probability distributions as labels to fine-tune the AI model, compelling it to discover relevant patterns across data modalities and distinguish characteristics within learned features.
 
-Expected Outcomes:
-Demonstration of algorithm clinical validity, identification of optimal implementation strategies, and generation of evidence supporting algorithm adoption in routine clinical practice.`
+Expected Results and Deliverables:
+
+• Establish feasibility of introducing automated serial EEG assessments in future prospective studies and clinical practice (M30)
+• Improved rule-based EEG algorithm from WP1 and WP2 (M36)
+
+Target Publications:
+
+• 3 Journal papers`
   },
   "wp4-dissemination": {
     title: "WP4: Dissemination & Implementation",

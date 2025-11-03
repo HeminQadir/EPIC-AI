@@ -19,8 +19,8 @@ const workPackages = [
   {
     id: "wp3-clinical-validation",
     icon: Users,
-    title: "WP3: Clinical Validation",
-    description: "Prospective validation of AI algorithms in real-world clinical settings across multiple intensive care units."
+    title: "WP3: Serial EEG Feasibility Study",
+    description: "Prospective feasibility study using serial EEGs after terminated sedation to improve differentiation of sedation from established brain damage in ICU."
   },
   {
     id: "wp4-dissemination",
