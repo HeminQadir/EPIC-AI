@@ -11,8 +11,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    content: "+1 (555) 123-4567",
-    link: "tel:+15551234567"
+    content: "+47 91 50 27 70",
+    link: "tel:+4791502770"
   },
   {
     icon: MapPin,
