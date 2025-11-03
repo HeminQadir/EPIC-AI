@@ -25,7 +25,7 @@ const teamMembers = [
   },
   {
     id: "hemin-qadir",
-    name: "Hemin Ali Qadir",
+    name: "Dr. Hemin Ali Qadir",
     role: "Senior AI Scientist",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
@@ -34,7 +34,7 @@ const teamMembers = [
   },
   {
     id: "naimahmed-nesaragi",
-    name: "Naimahmed Nesaragi",
+    name: "Dr. Naimahmed Nesaragi",
     role: "AI Researcher",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["AI", "Machine Learning", "Signal Processing"],
@@ -50,7 +50,7 @@ const teamMembers = [
   },
   {
     id: "henning-wimmer",
-    name: "Henning Wimmer",
+    name: "Dr. Henning Wimmer",
     role: "Neurologist",
     affiliation: "Oslo University Hospital Department of Neurology",
     expertise: ["Neurology", "Clinical Neurophysiology"],

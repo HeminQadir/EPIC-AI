@@ -43,7 +43,7 @@ const teamMembersData: Record<string, any> = {
     }
   },
   "hemin-qadir": {
-    name: "Hemin Ali Qadir",
+    name: "Dr. Hemin Ali Qadir",
     role: "Senior AI Scientist",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
@@ -58,12 +58,12 @@ const teamMembersData: Record<string, any> = {
     }
   },
   "naimahmed-nesaragi": {
-    name: "Naimahmed Nesaragi",
+    name: "Dr. Naimahmed Nesaragi",
     role: "AI Researcher",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["AI", "Machine Learning", "Signal Processing"],
     email: "naimahmed.nesaragi@oslo-universitetssykehus.no",
-    bio: "Naimahmed Nesaragi is an AI Researcher at the Intervention Centre, Oslo University Hospital. His expertise in machine learning and signal processing contributes to the development of advanced analytical methods for medical data.",
+    bio: "Dr. Naimahmed Nesaragi is an AI Researcher at the Intervention Centre, Oslo University Hospital. His expertise in machine learning and signal processing contributes to the development of advanced analytical methods for medical data.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
