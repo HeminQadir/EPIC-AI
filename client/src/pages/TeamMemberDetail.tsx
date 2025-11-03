@@ -11,13 +11,13 @@ import kjetilImage from "@assets/kjsunde_1762155852941.png";
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
   "kjetil-sunde": {
-    name: "Dr. Kjetil Sunde",
+    name: "Prof. Kjetil Sunde",
     role: "Project Leader",
     affiliation: "Dept of Anesthesia and Intensive Care Medicine, OUS and Institute of Clinical Medicine, UiO",
     expertise: ["Cardiac Arrest", "Post-Resuscitation Care", "Neurocritical Care"],
     email: "kjetil.sunde@medisin.uio.no",
     image: kjetilImage,
-    bio: "Dr. Kjetil Sunde is a professor at the Department of Anesthesia and Intensive Care Medicine, OUS and the Institute of Clinical Medicine, UiO. He is heading the \"Brain-Heart\" research group and works in the surgical and neurosurgical ICU at OUS Ullevål. He has extensive research experience in experimental and clinical cardiac arrest and post-resuscitation care studies, and was the main supervisor of NORCAST. He will be the project leader and responsible for WP3.",
+    bio: "Prof. Kjetil Sunde is a professor at the Department of Anesthesia and Intensive Care Medicine, OUS and the Institute of Clinical Medicine, UiO. He is heading the \"Brain-Heart\" research group and works in the surgical and neurosurgical ICU at OUS Ullevål. He has extensive research experience in experimental and clinical cardiac arrest and post-resuscitation care studies, and was the main supervisor of NORCAST. He will be the project leader and responsible for WP3.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",
@@ -26,7 +26,7 @@ const teamMembersData: Record<string, any> = {
     }
   },
   "kristian-nilsen": {
-    name: "Dr. Kristian Bernard Nilsen",
+    name: "Prof. Kristian Bernard Nilsen",
     role: "Professor and Head of Section. Senior Clinical Neurophysiologist (Medical Doctor)",
     affiliation: "Oslo University Hospital, Section of Clinical Neurophysiology, Department of Neurology",
     secondaryAffiliation: "Faculty of Medicine, Institute of Clinical Medicine, University of Oslo",

@@ -7,7 +7,7 @@ import kjetilImage from "@assets/kjsunde_1762155852941.png";
 const teamMembers = [
   {
     id: "kjetil-sunde",
-    name: "Dr. Kjetil Sunde",
+    name: "Prof. Kjetil Sunde",
     role: "Project Leader",
     affiliation: "Dept of Anesthesia and Intensive Care Medicine, OUS and Institute of Clinical Medicine, UiO",
     expertise: ["Cardiac Arrest", "Post-Resuscitation Care", "Neurocritical Care"],
@@ -16,7 +16,7 @@ const teamMembers = [
   },
   {
     id: "kristian-nilsen",
-    name: "Dr. Kristian Bernard Nilsen",
+    name: "Prof. Kristian Bernard Nilsen",
     role: "Professor and Head of Section",
     affiliation: "Oslo University Hospital, Section of Clinical Neurophysiology, Department of Neurology",
     expertise: ["Clinical Neurophysiology", "Neurology", "Artificial Intelligence", "Clinical Studies", "Innovation"],
