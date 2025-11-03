@@ -90,11 +90,13 @@ Follow similar clinical advisory and internal validation steps as WP1. Additiona
 The goal is to use additional information from other modalities to validate EEG assessments, serving as a secondary voting scheme to enhance EEG reliability in neuro-prognostication.
 
 Expected Results and Deliverables:
+
 • Project-specific database (M18)
 • Multi-grading assessment scheme for multi-modal scenarios (M30)
 • Improved rule-based EEG algorithm from WP1 using additional modalities (M36)
 
 Target Publications:
+
 • 1 Conference paper
 • 2 Journal papers`
   },
