@@ -14,6 +14,7 @@ import henningImage from "@assets/henning_1762157995038.jpeg";
 import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 import perImage from "@assets/Steinar_1762165340846.jpg";
+import lineImage from "@assets/Line-Besos-Ulvin_web_1762165590836.jpg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -159,6 +160,7 @@ const teamMembersData: Record<string, any> = {
     affiliation: "Oslo University Hospital Department of Neurology",
     expertise: ["Neurology", "Clinical Neurophysiology", "Epilepsy", "Status Epilepticus"],
     email: "linbed@ous-hf.no",
+    image: lineImage,
     bio: "Dr. Line Bédos Ulvin is a Consultant and PhD student at Oslo University Hospital Department of Neurology. Her research focuses on epilepsy and status epilepticus, with extensive publications on the predictive performances of scoring systems, treatment approaches, and clinical outcomes in status epilepticus patients. Her work includes validation of EEG criteria for nonconvulsive status epilepticus and evaluation of modern treatment strategies in adult patients.",
     links: {
       ousPage: "https://www.ous-research.no/home/anephys/Group-members/22790"

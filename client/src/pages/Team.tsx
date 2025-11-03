@@ -8,6 +8,7 @@ import henningImage from "@assets/henning_1762157995038.jpeg";
 import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 import perImage from "@assets/Steinar_1762165340846.jpg";
+import lineImage from "@assets/Line-Besos-Ulvin_web_1762165590836.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -72,7 +73,8 @@ const teamMembers = [
     role: "Consultant, PhD Student, MD",
     affiliation: "Oslo University Hospital Department of Neurology",
     expertise: ["Neurology", "Clinical Neurophysiology", "Epilepsy", "Status Epilepticus"],
-    email: "linbed@ous-hf.no"
+    email: "linbed@ous-hf.no",
+    image: lineImage
   },
   {
     id: "ilangko-balasingham",
