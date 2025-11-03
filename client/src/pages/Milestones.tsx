@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Circle, ImageIcon } from "lucide-react";
+import { CheckCircle2, Circle } from "lucide-react";
+import ganttChart from "@assets/gantt_1762172140623.png";
 
 const milestones = [
   {
@@ -95,11 +96,12 @@ export default function Milestones() {
                 <CardTitle>Gantt Chart</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="aspect-[4/3] w-full bg-muted rounded-lg flex flex-col items-center justify-center gap-4 p-8" data-testid="gantt-chart-placeholder">
-                  <ImageIcon className="w-16 h-16 text-muted-foreground/50" />
-                  <p className="text-muted-foreground text-center">
-                    Gantt chart placeholder - Visual timeline of work packages and dependencies
-                  </p>
+                <div className="w-full" data-testid="gantt-chart">
+                  <img 
+                    src={ganttChart} 
+                    alt="Gantt chart showing timeline of work packages WP1-WP5 across 2025-2027" 
+                    className="w-full h-auto rounded-lg"
+                  />
                 </div>
               </CardContent>
             </Card>
