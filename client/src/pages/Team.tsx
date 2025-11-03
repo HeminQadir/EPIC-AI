@@ -14,10 +14,10 @@ const teamMembers = [
   {
     id: "kristian-nilsen",
     name: "Dr. Kristian Bernard Nilsen",
-    role: "Co-Investigator",
-    affiliation: "Department of Neurology, OUS",
-    expertise: ["Clinical Neurophysiology", "Applied Neurophysiology", "AI in Healthcare"],
-    email: "kristian.nilsen@oslo-universitetssykehus.no"
+    role: "Professor and Head of Section",
+    affiliation: "Oslo University Hospital, Section of Clinical Neurophysiology, Department of Neurology",
+    expertise: ["Clinical Neurophysiology", "Neurology", "Artificial Intelligence", "Clinical Studies", "Innovation"],
+    email: "kristian.bernhard.nilsen@ous-hf.no"
   },
   {
     id: "hemin-qadir",

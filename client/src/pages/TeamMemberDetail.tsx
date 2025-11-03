@@ -23,15 +23,18 @@ const teamMembersData: Record<string, any> = {
   },
   "kristian-nilsen": {
     name: "Dr. Kristian Bernard Nilsen",
-    role: "Co-Investigator",
-    affiliation: "Department of Neurology, OUS",
-    expertise: ["Clinical Neurophysiology", "Applied Neurophysiology", "AI in Healthcare"],
-    email: "kristian.nilsen@oslo-universitetssykehus.no",
-    bio: "Dr. Kristian Bernard Nilsen is leading the research group for applied neurophysiology and head of section for Clinical Neurophysiology, Department of Neurology at OUS. He is currently leading a large national study for development of a national infrastructure for AI studies in clinical neurophysiology.",
+    role: "Professor and Head of Section. Senior Clinical Neurophysiologist (Medical Doctor)",
+    affiliation: "Oslo University Hospital, Section of Clinical Neurophysiology, Department of Neurology",
+    secondaryAffiliation: "Faculty of Medicine, Institute of Clinical Medicine, University of Oslo",
+    expertise: ["Clinical Neurophysiology", "Neurology", "Artificial Intelligence", "Clinical Studies", "Innovation"],
+    researchProfile: ["Applied Neurophysiology", "Big Data in Clinical Neurophysiology", "Validation of Clinical Neurophysiological Methods", "Neuropathic Pain", "Peripheral Neuropathies"],
+    email: "kristian.bernhard.nilsen@ous-hf.no",
+    bio: "Senior Clinical Neurophysiologist with a background from both technical and medical studies. Head of Section Senior and Professor, leading the research group for Applied Neurophysiology and Innovation at Oslo University Hospital. The group consists of 1 senior researcher, 3 PhD students, 2 post docs, 2 research assistants/coordinators, and 3 senior clinical neurophysiologists with Ph.D.\n\nI have experience as principal investigator for a wide range of projects, including clinical drug studies (5), administrative projects (2), innovation projects (3) and basic research projects (>10). I have 97 peer-reviewed publications, H-index of 32 and more than 4000 citations.",
     links: {
-      linkedin: "https://linkedin.com/in/example",
-      googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://oslo-universitetssykehus.no"
+      linkedin: "https://www.linkedin.com/in/kristian-bernhard-nilsen-0b1b322/",
+      googleScholar: "https://scholar.google.com/citations?user=wSJeOnsAAAAJ&hl=no&oi=ao",
+      institutionPage: "https://www.ous-research.no/no/nevroglimt/CV/19511",
+      orcid: "https://orcid.org/0000-0002-4492-2387"
     }
   },
   "hemin-qadir": {
@@ -115,6 +118,9 @@ export default function TeamMemberDetail() {
 
           <p className="text-xl text-foreground mb-2" data-testid="text-member-role">{member.role}</p>
           <p className="text-muted-foreground" data-testid="text-member-affiliation">{member.affiliation}</p>
+          {member.secondaryAffiliation && (
+            <p className="text-muted-foreground mt-1" data-testid="text-member-secondary-affiliation">{member.secondaryAffiliation}</p>
+          )}
         </div>
 
         <div className="space-y-8">
@@ -123,9 +129,9 @@ export default function TeamMemberDetail() {
               <CardTitle className="font-heading text-2xl">Biography</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground leading-relaxed" data-testid="text-member-bio">
+              <div className="text-foreground leading-relaxed whitespace-pre-line" data-testid="text-member-bio">
                 {member.bio}
-              </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -147,6 +153,27 @@ export default function TeamMemberDetail() {
               </div>
             </CardContent>
           </Card>
+
+          {member.researchProfile && member.researchProfile.length > 0 && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="font-heading text-2xl">Research Profile</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {member.researchProfile.map((area: string, index: number) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-accent text-accent-foreground rounded-md text-sm font-medium"
+                      data-testid={`badge-research-profile-${index}`}
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          )}
 
           <Card>
             <CardHeader>
