@@ -27,10 +27,10 @@ const statsData = [
   },
   {
     title: "Successful Predictions",
-    value: "215",
-    description: "Within grey areas",
+    value: "0",
+    description: "Model in development",
     icon: CheckCircle,
-    trend: { value: "92% accuracy rate", positive: true }
+    trend: { value: "Testing pending", positive: false }
   }
 ];
 
