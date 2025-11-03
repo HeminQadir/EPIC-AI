@@ -109,7 +109,7 @@ const teamMembersData: Record<string, any> = {
     name: "Prof. Ilangko Sellappah Balasingham",
     role: "Professor",
     affiliation: "Faculty of Information Technology and Electrical Engineering, NTNU",
-    secondaryAffiliation: "Head of Section for Medical ICT R&D, Intervention Centre, Oslo University Hospital",
+    secondaryAffiliation: "Head of Information and Communication Technology (ICT) Section, Intervention Centre, Oslo University Hospital",
     expertise: ["Medical Signal Processing", "Communications", "Biomedical Sensor Networks"],
     email: "ilangko.balasingham@ntnu.no",
     secondaryEmail: "i.s.balasingham@ous-research.no",
