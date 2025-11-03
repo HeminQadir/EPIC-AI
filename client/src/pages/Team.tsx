@@ -6,6 +6,7 @@ import naimahmedImage from "@assets/Naimahmed-Nesarag_1762156443954.jpg";
 import haukurImage from "@assets/haukur_1762157384201.jpeg";
 import henningImage from "@assets/henning_1762157995038.jpeg";
 import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
+import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -81,6 +82,15 @@ const teamMembers = [
     email: "ilangko.balasingham@ntnu.no",
     secondaryEmail: "i.s.balasingham@ous-research.no",
     image: ilangkoImage
+  },
+  {
+    id: "geir-andersen",
+    name: "Geir Øystein Andersen",
+    role: "Senior Cardiologist, MD, PhD",
+    affiliation: "Department of Cardiology, Oslo University Hospital",
+    expertise: ["Clinical Trials", "Translational Research", "Cardiac Intensive Care"],
+    email: "g.o.andersen@icloud.com",
+    image: geirImage
   }
 ];
 

@@ -12,6 +12,7 @@ import naimahmedImage from "@assets/Naimahmed-Nesarag_1762156443954.jpg";
 import haukurImage from "@assets/haukur_1762157384201.jpeg";
 import henningImage from "@assets/henning_1762157995038.jpeg";
 import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
+import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -120,6 +121,20 @@ const teamMembersData: Record<string, any> = {
       personalWebsite: "https://www.balasingham.com/",
       institutionPage: "https://www.ntnu.edu/employees/ilangko.balasingham",
       ousPage: "https://ous-research.no/home/balasingham/Group-members/8089"
+    }
+  },
+  "geir-andersen": {
+    name: "Geir Øystein Andersen",
+    role: "Senior Cardiologist, MD, PhD",
+    affiliation: "Department of Cardiology, Oslo University Hospital",
+    secondaryAffiliation: "Head of Cardiac Intensive Care Unit and Cardiac Intensive Care Research Unit",
+    expertise: ["Clinical Trials", "Translational Research", "Cardiac Intensive Care"],
+    email: "g.o.andersen@icloud.com",
+    image: geirImage,
+    bio: "Senior cardiologist Geir Øystein Andersen is a full-time clinician, Head of Cardiac intensive care unit and leader of the Cardiac intensive care research unit. PhD on cardiac alpha-adrenergic receptors. Broad expertise in clinical trials including patients with acute myocardial infarction, acute heart failure and cardiac arrest. Supervised 7 PhD students, around 115 publications.",
+    researchProfile: ["Clinical Trials in Intensive Cardiac Care", "Cardiogenic Shock", "Acute Myocardial Infarction", "Cardiac Arrest"],
+    links: {
+      ousPage: "https://www.ous-research.no/home/cic/Group-members/11491"
     }
   }
 };
