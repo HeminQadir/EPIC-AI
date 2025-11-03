@@ -3,6 +3,7 @@ import heminImage from "@assets/hEMIN_1760013406099.jpg";
 import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jpeg";
 import kjetilImage from "@assets/kjsunde_1762155852941.png";
 import naimahmedImage from "@assets/Naimahmed-Nesarag_1762156443954.jpg";
+import haukurImage from "@assets/haukur_1762157384201.jpeg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -49,7 +50,8 @@ const teamMembers = [
     role: "Medical Specialist, PhD Student",
     affiliation: "Oslo University Hospital",
     expertise: ["Neuroscience", "Neurophysiology"],
-    email: "haugud@ous-hf.no"
+    email: "haugud@ous-hf.no",
+    image: haukurImage
   },
   {
     id: "henning-wimmer",
