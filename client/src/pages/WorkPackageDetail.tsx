@@ -33,7 +33,30 @@ Transformer networks (TNs) with attention mechanisms (AMs) have recently become 
 
 In our approach, we will segment EEG recordings into n-second windows, transforming these segments into tokens. This allows our customized TN to process the data and build attention maps. Tokenization of segments facilitates TN to identify complex correlations within the EEG signals.
 
-To capture the complex relationships within EEG data, the AM can be customized to focus on both local and global interactions. This involves creating a multi-head AM of TN where different heads are designed to analyze localized patterns within adjacent segments as well as broader patterns across multiple segments. Additionally, considering that EEG data are collected from multiple channels (electrodes), the AM can be tailored to emphasize inter-channel relationships, allowing the model to prioritize and learn from the most informative channels for specific neurological conditions.`
+To capture the complex relationships within EEG data, the AM can be customized to focus on both local and global interactions. This involves creating a multi-head AM of TN where different heads are designed to analyze localized patterns within adjacent segments as well as broader patterns across multiple segments. Additionally, considering that EEG data are collected from multiple channels (electrodes), the AM can be tailored to emphasize inter-channel relationships, allowing the model to prioritize and learn from the most informative channels for specific neurological conditions.
+
+Task 1.3: Clinical Advisory on the Model Development and Internal Validation
+
+Close collaboration during the development of the AI algorithms and evaluation of intermediate results will be required. The clinical Ph.D. researcher will assist Postdoc(AI) in verifying the developed rule-based algorithm based on the American Clinical Neurophysiology Society (ACNS) grading. Internal Validation of the developed models from WP1, 2 will be performed using a similar approach described in the recent study published in JAMA Neurology. We will test the models on the withheld validation set (not included in the development phase).
+
+Visualization Tool Development:
+
+To aid the clinical Ph.D. researcher in evaluating and validating the model's classification outputs, a key aspect will be developing a visualization tool incorporating several key features:
+
+• Attention heatmaps will be used to display the attention weights across different EEG segments, highlighting which time points or channels are most influential in the model's predictions.
+
+• Interactive time-series plots will allow clinicians to explore model predictions in relation to the raw EEG data, providing insights into how predictions align with observed patterns.
+
+• Channel-wise contribution graphs will illustrate the relative importance of various EEG channels, helping to identify which channels are critical for detecting specific conditions.
+
+Expected Results and Deliverables:
+• D1.1: Project-specific database (M6)
+• D1.2: Multi-grading rule-based EEG pattern recognition algorithm (M18)
+• D1.3: Development of three AI models (M24)
+
+Target Publications:
+• 1 Conference paper (IEEE-EMBC)
+• 3 Journal papers (IEEE-TPAMI, Pattern Recognition, Resuscitation-Elsevier)`
   },
   "wp2-ai-development": {
     title: "WP2: AI Algorithm Development",
