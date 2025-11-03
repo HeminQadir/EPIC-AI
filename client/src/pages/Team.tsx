@@ -29,7 +29,7 @@ const teamMembers = [
     role: "Senior AI Scientist",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
-    email: "hemin.qadir@oslo-universitetssykehus.no",
+    email: "hemqad@ous-hf.no",
     image: heminImage
   },
   {

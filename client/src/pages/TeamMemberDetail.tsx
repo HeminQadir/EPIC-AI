@@ -47,14 +47,14 @@ const teamMembersData: Record<string, any> = {
     role: "Senior AI Scientist",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
-    email: "hemin.qadir@oslo-universitetssykehus.no",
+    email: "hemqad@ous-hf.no",
     image: heminImage,
     bio: "Dr. Hemin Ali Qadir is a Senior AI Scientist at the Intervention Centre, Oslo University Hospital. He is an expert in machine learning, deep learning, and multimodal AI, bringing advanced computational techniques to medical applications.",
     links: {
-      linkedin: "https://linkedin.com/in/example",
-      googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://oslo-universitetssykehus.no",
-      orcid: "https://orcid.org/0000-0000-0000-0001"
+      linkedin: "https://www.linkedin.com/in/hemin-qadir-1008ab153/",
+      googleScholar: "https://scholar.google.com/citations?user=6TUI_VQAAAAJ&hl=en",
+      institutionPage: "https://ous-research.no/home/balasingham/Group-members/24986",
+      orcid: "https://orcid.org/0000-0002-9271-5040"
     }
   },
   "naimahmed-nesaragi": {
