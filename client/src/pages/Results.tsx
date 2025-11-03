@@ -20,7 +20,7 @@ const statsData = [
   },
   {
     title: "Algorithm Accuracy",
-    value: "87.3%",
+    value: "71.8%",
     description: "In outcome prediction",
     icon: TrendingUp,
     trend: { value: "5.2% improvement", positive: true }
@@ -37,7 +37,7 @@ const statsData = [
 const keyFindings = [
   {
     title: "Pattern Differentiation",
-    description: "Successfully developed algorithms that distinguish between sedation-induced EEG changes and irreversible brain damage with 87.3% accuracy.",
+    description: "Successfully developed algorithms that distinguish between sedation-induced EEG changes and irreversible brain damage with 71.8% accuracy.",
     icon: Brain
   },
   {
