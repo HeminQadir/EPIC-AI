@@ -68,11 +68,11 @@ const teamMembers = [
   },
   {
     id: "line-maria",
-    name: "Line Maria",
-    role: "Neurologist",
+    name: "Dr. Line Bédos Ulvin",
+    role: "Consultant, PhD Student, MD",
     affiliation: "Oslo University Hospital Department of Neurology",
-    expertise: ["Neurology", "Clinical Neurophysiology"],
-    email: "line.maria@oslo-universitetssykehus.no"
+    expertise: ["Neurology", "Clinical Neurophysiology", "Epilepsy", "Status Epilepticus"],
+    email: "linbed@ous-hf.no"
   },
   {
     id: "ilangko-balasingham",

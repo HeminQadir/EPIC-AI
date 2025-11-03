@@ -152,6 +152,17 @@ const teamMembersData: Record<string, any> = {
       institutionPage: "https://www.med.uio.no/klinmed/personer/vit/pershal/index.html",
       ousPage: "https://www.ous-research.no/home/pshalvorsen/Group+members/13705"
     }
+  },
+  "line-maria": {
+    name: "Dr. Line Bédos Ulvin",
+    role: "Consultant, PhD Student, MD",
+    affiliation: "Oslo University Hospital Department of Neurology",
+    expertise: ["Neurology", "Clinical Neurophysiology", "Epilepsy", "Status Epilepticus"],
+    email: "linbed@ous-hf.no",
+    bio: "Dr. Line Bédos Ulvin is a Consultant and PhD student at Oslo University Hospital Department of Neurology. Her research focuses on epilepsy and status epilepticus, with extensive publications on the predictive performances of scoring systems, treatment approaches, and clinical outcomes in status epilepticus patients. Her work includes validation of EEG criteria for nonconvulsive status epilepticus and evaluation of modern treatment strategies in adult patients.",
+    links: {
+      ousPage: "https://www.ous-research.no/home/anephys/Group-members/22790"
+    }
   }
 };
 
