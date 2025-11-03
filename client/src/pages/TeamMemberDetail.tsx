@@ -9,6 +9,7 @@ import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jp
 import kjetilImage from "@assets/kjsunde_1762155852941.png";
 import naimahmedImage from "@assets/Naimahmed-Nesarag_1762156443954.jpg";
 import haukurImage from "@assets/haukur_1762157384201.jpeg";
+import henningImage from "@assets/henning_1762157995038.jpeg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -94,6 +95,7 @@ const teamMembersData: Record<string, any> = {
     affiliation: "Oslo University Hospital Department of Neurology",
     expertise: ["Neurology", "Clinical Neurophysiology", "Intensive Care"],
     email: "UXWIMH@ous-hf.no",
+    image: henningImage,
     bio: "Dr. Henning Wimmer is an Intensivist at Oslo University Hospital Department of Neurology. His expertise in neurology, clinical neurophysiology, and intensive care contributes to the critical care management of patients with neurological conditions.",
     links: {
       researchGate: "https://www.researchgate.net/profile/Henning-Wimmer",
