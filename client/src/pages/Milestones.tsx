@@ -52,6 +52,25 @@ export default function Milestones() {
           </p>
         </div>
 
+        {/* Gantt Chart - Full Width */}
+        <div className="mb-12">
+          <h2 className="font-heading font-semibold text-2xl mb-6">Work Package Timeline</h2>
+          <Card>
+            <CardHeader>
+              <CardTitle>Gantt Chart</CardTitle>
+            </CardHeader>
+            <CardContent className="p-6">
+              <div className="w-full overflow-x-auto" data-testid="gantt-chart">
+                <img 
+                  src={ganttChart} 
+                  alt="Gantt chart showing timeline of work packages WP1-WP5 across 2025-2027" 
+                  className="w-full min-w-[800px] h-auto rounded-lg"
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Side: Milestone Timeline */}
           <div>
@@ -88,25 +107,10 @@ export default function Milestones() {
             </div>
           </div>
 
-          {/* Right Side: Gantt Chart */}
+          {/* Right Side: Timeline Overview */}
           <div>
-            <h2 className="font-heading font-semibold text-2xl mb-6">Work Package Timeline</h2>
-            <Card>
-              <CardHeader>
-                <CardTitle>Gantt Chart</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="w-full" data-testid="gantt-chart">
-                  <img 
-                    src={ganttChart} 
-                    alt="Gantt chart showing timeline of work packages WP1-WP5 across 2025-2027" 
-                    className="w-full h-auto rounded-lg"
-                  />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="mt-6 bg-accent/30">
+            <h2 className="font-heading font-semibold text-2xl mb-6">Overview</h2>
+            <Card className="bg-accent/30">
               <CardHeader>
                 <CardTitle className="text-lg">Timeline Overview</CardTitle>
               </CardHeader>
@@ -118,7 +122,7 @@ export default function Milestones() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Work Packages:</span>
-                    <span className="font-medium">4 parallel tracks</span>
+                    <span className="font-medium">5 parallel tracks</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Major Milestones:</span>
