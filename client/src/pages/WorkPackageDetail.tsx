@@ -11,43 +11,39 @@ const workPackageData: Record<string, any> = {
     contributors: "Lundqvist, Sunde, Andersen, Qadir, Balasingham",
     personnel: "Postdoc, Ph.D., Nurse",
     content: `Aims and Objectives:
-A retrospective study using our EEG database is designed to yield an automated multi-grading rule-based EEG assessment scheme describing and grading normal and pathological EEG patterns controlling for sedative effects.
+Develop an automated multi-grading rule-based EEG assessment scheme for grading normal and pathological EEG patterns while controlling for sedative effects.
 
 Task 1.1: Establish Project-Specific Database
 
-A project-specific dataset will be established by combining information on sedation (yes/no) and EEG features annotated using the SCORE nomenclature in collaboration with Nurse. The combined annotation for the EEG recordings will have the following multilevel grading groups:
-• Non-sedated/Non-malignant
+Establish a dataset combining sedation status (yes/no) with EEG features annotated using SCORE nomenclature. The combined annotation will have four multilevel grading groups:
+• Non-sedated/Non-malignant (good prognosis)
 • Sedated/Non-malignant
 • Non-sedated/Highly Malignant
 • Sedated/Highly Malignant
 
-The Non-Sedated/Non-Malignant group defines the (Control Group for study Population) good prognosis and the other three groups describe the pathological EEG patterns towards poor prognosis.
+Task 1.2: AI Model Development for Assessment of EEG Patterns
 
-Task 1.2: AI Model Development for Assessment of EEG Patterns Relevant for Prognostication
-
-The raw EEGs annotated in Task 1.1 are used to develop three AI-based models: two for binary classification and one for four-class categorization. The first binary classification model determines whether the patient is sedated or not, while the second distinguishes between highly malignant and benign conditions. The third model is a four-class categorization system that classifies EEG data into one of four categories: non-sedated/non-malignant, sedated/non-malignant, non-sedated/highly malignant, and sedated/highly malignant.
+Develop three AI-based models using annotated EEGs from Task 1.1:
+• Binary model 1: Sedation status classification
+• Binary model 2: Malignancy classification (highly malignant vs. benign)
+• Four-class model: Combined sedation and malignancy categorization
 
 Transformer Networks with Attention Mechanisms:
 
-Transformer networks (TNs) with attention mechanisms (AMs) have recently become prominent in natural language processing, largely due to their scalability and their ability to build attention maps that identify correlations between words (tokens). Their versatility and robustness have led to their adaptation in various advanced applications, including ChatGPT. Given these strengths, TNs present an intriguing avenue for further exploration of time-series EEG data, as they can be leveraged to uncover complex patterns and relationships both within individual EEG channels (intra-channel) and between different channels (inter-channel).
+We will employ Transformer networks (TNs) with attention mechanisms to analyze time-series EEG data. EEG recordings will be segmented into n-second windows and transformed into tokens, allowing the TN to build attention maps and identify complex correlations within signals.
 
-In our approach, we will segment EEG recordings into n-second windows, transforming these segments into tokens. This allows our customized TN to process the data and build attention maps. Tokenization of segments facilitates TN to identify complex correlations within the EEG signals.
+The multi-head attention mechanism will analyze both local patterns (adjacent segments) and global patterns (across multiple segments), while emphasizing inter-channel relationships to prioritize the most informative channels for specific neurological conditions.
 
-To capture the complex relationships within EEG data, the AM can be customized to focus on both local and global interactions. This involves creating a multi-head AM of TN where different heads are designed to analyze localized patterns within adjacent segments as well as broader patterns across multiple segments. Additionally, considering that EEG data are collected from multiple channels (electrodes), the AM can be tailored to emphasize inter-channel relationships, allowing the model to prioritize and learn from the most informative channels for specific neurological conditions.
+Task 1.3: Clinical Advisory and Internal Validation
 
-Task 1.3: Clinical Advisory on the Model Development and Internal Validation
-
-Close collaboration during the development of the AI algorithms and evaluation of intermediate results will be required. The clinical Ph.D. researcher will assist Postdoc(AI) in verifying the developed rule-based algorithm based on the American Clinical Neurophysiology Society (ACNS) grading. Internal Validation of the developed models from WP1, 2 will be performed using a similar approach described in the recent study published in JAMA Neurology. We will test the models on the withheld validation set (not included in the development phase).
+The clinical Ph.D. researcher will collaborate with Postdoc(AI) to verify the developed algorithms based on American Clinical Neurophysiology Society (ACNS) grading. Internal validation will be performed on a withheld validation set using approaches from recent JAMA Neurology studies.
 
 Visualization Tool Development:
 
-To aid the clinical Ph.D. researcher in evaluating and validating the model's classification outputs, a key aspect will be developing a visualization tool incorporating several key features:
-
-• Attention heatmaps will be used to display the attention weights across different EEG segments, highlighting which time points or channels are most influential in the model's predictions.
-
-• Interactive time-series plots will allow clinicians to explore model predictions in relation to the raw EEG data, providing insights into how predictions align with observed patterns.
-
-• Channel-wise contribution graphs will illustrate the relative importance of various EEG channels, helping to identify which channels are critical for detecting specific conditions.
+A visualization tool will be developed with three key features:
+• Attention heatmaps displaying influential time points and channels
+• Interactive time-series plots for exploring predictions against raw EEG data
+• Channel-wise contribution graphs identifying critical channels for specific conditions
 
 Expected Results and Deliverables:
 • D1.1: Project-specific database (M6)
