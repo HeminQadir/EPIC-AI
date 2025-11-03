@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Mail } from "lucide-react";
 import { SiLinkedin, SiGooglescholar, SiOrcid } from "react-icons/si";
+import heminImage from "@assets/hEMIN_1760013406099.jpg";
+import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jpeg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -29,6 +31,7 @@ const teamMembersData: Record<string, any> = {
     expertise: ["Clinical Neurophysiology", "Neurology", "Artificial Intelligence", "Clinical Studies", "Innovation"],
     researchProfile: ["Applied Neurophysiology", "Big Data in Clinical Neurophysiology", "Validation of Clinical Neurophysiological Methods", "Neuropathic Pain", "Peripheral Neuropathies"],
     email: "kristian.bernhard.nilsen@ous-hf.no",
+    image: kristianImage,
     bio: "Senior Clinical Neurophysiologist with a background from both technical and medical studies. Head of Section Senior and Professor, leading the research group for Applied Neurophysiology and Innovation at Oslo University Hospital. The group consists of 1 senior researcher, 3 PhD students, 2 post docs, 2 research assistants/coordinators, and 3 senior clinical neurophysiologists with Ph.D.\n\nI have experience as principal investigator for a wide range of projects, including clinical drug studies (5), administrative projects (2), innovation projects (3) and basic research projects (>10). I have 97 peer-reviewed publications, H-index of 32 and more than 4000 citations.",
     links: {
       linkedin: "https://www.linkedin.com/in/kristian-bernhard-nilsen-0b1b322/",
@@ -38,12 +41,13 @@ const teamMembersData: Record<string, any> = {
     }
   },
   "hemin-qadir": {
-    name: "Dr. Hemin Qadir",
+    name: "Hemin Ali Qadir",
     role: "Senior AI Scientist",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["Machine Learning", "Deep Learning", "Multimodal AI"],
     email: "hemin.qadir@oslo-universitetssykehus.no",
-    bio: "Dr. Hemin Qadir is a Senior AI Scientist at the Intervention Centre, Oslo University Hospital. He is an expert in machine learning, deep learning, and multimodal AI, bringing advanced computational techniques to medical applications.",
+    image: heminImage,
+    bio: "Dr. Hemin Ali Qadir is a Senior AI Scientist at the Intervention Centre, Oslo University Hospital. He is an expert in machine learning, deep learning, and multimodal AI, bringing advanced computational techniques to medical applications.",
     links: {
       linkedin: "https://linkedin.com/in/example",
       googleScholar: "https://scholar.google.com/citations?user=example",

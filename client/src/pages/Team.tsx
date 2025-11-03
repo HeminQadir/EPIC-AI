@@ -1,5 +1,6 @@
 import TeamMember from "@/components/TeamMember";
 import heminImage from "@assets/hEMIN_1760013406099.jpg";
+import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jpeg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -17,7 +18,8 @@ const teamMembers = [
     role: "Professor and Head of Section",
     affiliation: "Oslo University Hospital, Section of Clinical Neurophysiology, Department of Neurology",
     expertise: ["Clinical Neurophysiology", "Neurology", "Artificial Intelligence", "Clinical Studies", "Innovation"],
-    email: "kristian.bernhard.nilsen@ous-hf.no"
+    email: "kristian.bernhard.nilsen@ous-hf.no",
+    image: kristianImage
   },
   {
     id: "hemin-qadir",
