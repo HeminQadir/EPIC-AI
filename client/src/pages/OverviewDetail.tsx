@@ -11,94 +11,86 @@ const sectionData: Record<string, any> = {
     summary: "Comprehensive overview of our AI-powered approach to neurological outcome assessment and prognostication.",
     content: `Assessment of neurological outcomes in comatose cardiac arrest (CA) survivors due to post-anoxic coma remains a persistent challenge in clinical practice. These patients are treated with mechanical ventilation and sedation in the intensive care unit (ICU) demanding substantial additional medical resources due to their complex care requirements. Continuing or withdrawing treatment based on multimodal prognostication using clinical, neurophysiological, biochemical markers and neuroimaging is a daunting task for clinicians.
 
-Since the brain is the most vulnerable organ in CA, and severe brain injury remains the primary cause of death, thus monitoring of the brain function for prognostication purposes is of paramount importance. Electroencephalogram (EEG), either continuously or at specified time points, give the best direct access to the current brain function and the present sedation effects. However, the crucial differentiation between reversible sedation effects (affecting EEGs) and irreversible brain damage is a huge problem.
+Since the brain is the most vulnerable organ in CA, and severe brain injury remains the primary cause of death, monitoring of the brain function for prognostication purposes is of paramount importance. Electroencephalogram (EEG), either continuously or at specified time points, gives the best direct access to the current brain function and the present sedation effects. However, the crucial differentiation between reversible sedation effects (affecting EEGs) and irreversible brain damage is a huge problem.
 
-In addition, the other prognostic markers also lack sensitivity and specificity, thereby leaving a significant portion of patients in uncertain prognostic grey areas. This underscores the imperative need to develop standardized rule-based assessment schemes with improved reliability to enhance prediction outcomes by mitigating uncertainty.`,
+In addition, the other prognostic markers also lack sensitivity and specificity, thereby leaving a significant portion of patients in uncertain prognostic grey areas. This underscores the imperative need to develop standardized rule-based assessment schemes with improved reliability to enhance prediction outcomes by mitigating uncertainty.
+
+This project aims to enhance neurological prognosis, and reduce uncertainty and ethical dilemmas in treating comatose survivors of CA by improving reliability of EEG assessments. To achieve this, we will develop multi-grading rule-based AI algorithms that predict neurophysiological outcomes from heterogeneous longitudinal EEG data. These algorithms will: 1) identify discernible patterns that can distinguish highly malignant EEG patterns (HMEP) associated with sedation from those indicative of irreversible post-anoxic brain damage; 2) incorporate clinical and biochemical prognostic indicators.`,
     hasCustomFigure: true
   },
   "research-objective": {
     title: "Research Objective",
     icon: Target,
     summary: "Enhance neurological prognosis and reduce uncertainty in treating comatose cardiac arrest survivors through improved EEG assessment reliability.",
-    content: `Our primary research objective is to fundamentally transform the approach to neurological outcome assessment in comatose cardiac arrest survivors. Current clinical practice faces significant challenges in differentiating between reversible sedation effects and irreversible brain damage, leaving many patients in uncertain prognostic grey areas.
+    content: `Our research objectives are strategically designed to address critical gaps in neurological outcome assessment for comatose cardiac arrest survivors. This project pursues three interconnected objectives:
 
-This project aims to address these critical gaps by developing and validating standardized, rule-based assessment schemes that leverage artificial intelligence and advanced EEG analysis. By improving the reliability of prognostic assessments, we seek to:
+**Objective 1: Multi-grading Rule-based EEG Assessment Scheme**
+Design a multi-grading rule-based EEG assessment scheme to identify markers of highly malignant EEG patterns (HMEP), controlling for sedative effects. This foundational objective establishes the framework for reliable EEG interpretation that accounts for the confounding effects of sedation.
 
-• Reduce uncertainty in clinical decision-making regarding treatment continuation or withdrawal
-• Minimize ethical dilemmas faced by clinicians and families
-• Optimize resource allocation in intensive care units
-• Improve patient outcomes through more accurate and timely prognostication
+**Objective 2: Multimodal Integration**
+Extend the multi-grading rule-based EEG assessment scheme for multi-modal scenarios using a model combining clinical variables like GCS (Glasgow Coma Scale), brain stem reflexes, EEG pattern recognition, and NSE (Neuron-Specific Enolase) levels. The reliability of EEG assessments for neuro prognostication is investigated with AI-based multimodal approaches, creating a comprehensive prognostic framework.
+
+**Objective 3: Prospective Study and Time-Series Predictions**
+Test feasibility of prospective study where early withdrawal of life-sustaining treatment (WLST) is avoided while time-series assessment of EEG patterns after sedation-withdrawal are added, and predictions are kept blinded to the treatment team. Design an AI framework that makes predictions over time, phrased in terms of either time-to-event outcomes (time-to-awakening/non-awakening) across multiple time horizons (e.g., within the next 24, 48, or 72 hours).
 
 The research builds upon decades of neurocritical care expertise, combining clinical insights with cutting-edge computational methods to create tools that can be readily integrated into real-world ICU settings.`
   },
   "ai-powered-analysis": {
-    title: "AI-Powered Analysis",
+    title: "AI-Powered Analysis & Pattern Recognition",
     icon: Lightbulb,
-    summary: "Develop multi-grading rule-based AI algorithms to predict neurophysiological outcomes from heterogeneous longitudinal EEG data.",
-    content: `Our AI-powered analysis framework represents a paradigm shift in how EEG data is interpreted for prognostic purposes. Traditional EEG interpretation relies heavily on expert visual assessment, which can be subjective and time-consuming, particularly in the context of sedation interference.
+    summary: "Develop multi-grading rule-based AI algorithms using transformer networks with attention mechanisms to identify discernible patterns that distinguish malignant EEG patterns from sedation effects.",
+    content: `Our AI-powered analysis framework leverages cutting-edge transformer networks with attention mechanisms to revolutionize EEG interpretation for prognostic purposes. The annotated EEGs are used to develop three AI-based models: two for binary classification and one for four-class categorization.
 
-We are developing sophisticated machine learning algorithms that can:
+**AI Model Architecture:**
 
-• Automatically process and analyze large volumes of longitudinal EEG recordings
-• Identify subtle patterns that may escape human observation
-• Integrate multiple data modalities including clinical, neurophysiological, and biochemical markers
-• Provide probabilistic outcome predictions with quantified uncertainty measures
+The first binary classification model determines whether the patient is sedated or not, while the second distinguishes between highly malignant and benign conditions. The third model is a four-class categorization system that classifies EEG data into one of four categories: non-sedated/non-malignant, sedated/non-malignant, non-sedated/highly malignant, and sedated/highly malignant.
 
-The algorithms employ a multi-grading approach, classifying EEG patterns into distinct categories based on their prognostic significance. This hierarchical classification system allows for nuanced interpretation that accounts for the complex interplay between sedation effects, underlying brain injury, and recovery potential.
+**Transformer Networks with Attention Mechanisms:**
 
-Key technical innovations include advanced signal processing techniques, deep learning architectures specifically designed for time-series medical data, and robust validation frameworks that ensure clinical reliability and generalizability across diverse patient populations.`
-  },
-  "pattern-recognition": {
-    title: "Pattern Recognition",
-    icon: LineChart,
-    summary: "Identify discernible patterns that distinguish malignant EEG patterns from sedation effects and irreversible brain damage.",
-    content: `Pattern recognition is at the heart of our diagnostic innovation. The crucial challenge in post-cardiac arrest care is differentiating between highly malignant EEG patterns (HMEP) that indicate poor prognosis and similar-appearing patterns that result from sedation and are potentially reversible.
+Transformer networks (TNs) with attention mechanisms (AMs) have recently become prominent in natural language processing, largely due to their scalability and their ability to build attention maps that identify correlations between tokens. Their versatility and robustness have led to their adaptation in various advanced applications, including ChatGPT. Given these strengths, TNs present an intriguing avenue for further exploration of time-series EEG data, as they can be leveraged to uncover complex patterns and relationships both within individual EEG channels (intra-channel) and between different channels (inter-channel).
 
-Our pattern recognition system addresses this challenge through:
+**EEG Tokenization and Pattern Recognition:**
 
-Temporal Pattern Analysis:
-• Tracking EEG evolution over hours and days
-• Identifying characteristic trajectories associated with recovery vs. deterioration
-• Detecting early warning signs of irreversible injury
+In our approach, we segment EEG recordings into n-second windows, transforming these segments into tokens. This allows our customized TN to process the data and build attention maps. Tokenization of segments facilitates TN to identify complex correlations within the EEG signals.
 
-Sedation Effect Modeling:
-• Creating comprehensive models of how different sedative agents affect EEG patterns
-• Accounting for pharmacokinetic and pharmacodynamic variability
-• Predicting expected EEG changes during sedation weaning
+**Multi-Head Attention for Local and Global Patterns:**
 
-Multi-modal Integration:
-• Combining EEG features with clinical context
-• Incorporating drug levels, vital signs, and laboratory values
-• Leveraging neuroimaging data when available
+To capture the complex relationships within EEG data, the AM can be customized to focus on both local and global interactions. This involves creating a multi-head AM of TN where different heads are designed to analyze localized patterns within adjacent segments as well as broader patterns across multiple segments. Additionally, considering that EEG data are collected from multiple channels (electrodes), the AM can be tailored to emphasize inter-channel relationships, allowing the model to prioritize and learn from the most informative channels for specific prognostic tasks.
 
-The system has been trained on extensive datasets from multiple medical centers, ensuring it can recognize patterns across diverse patient populations and clinical settings. This robust pattern recognition capability provides clinicians with unprecedented insight into the underlying state of brain function.`
+This sophisticated pattern recognition capability provides clinicians with unprecedented insight into differentiating between highly malignant EEG patterns (HMEP) that indicate poor prognosis and similar-appearing patterns that result from sedation and are potentially reversible.`
   },
   "clinical-impact": {
     title: "Clinical Impact",
     icon: Shield,
     summary: "Reduce ethical dilemmas and improve treatment decisions by mitigating uncertainty in prognostic grey areas.",
-    content: `The clinical impact of this research extends far beyond technical innovation—it addresses fundamental challenges in critical care medicine that affect patients, families, and healthcare systems daily.
+    content: `This research project aligns with Goal 1 of the research strategy of Oslo University Hospital (OUS) for 2021-2025: "Implement new models for clinical trials that take developments in personalised medicine into account, and include more interdisciplinary aspects in clinical trials." Furthermore, it aligns with Goal 3: "Facilitate the development and use of high-performance computing, including artificial intelligence, in both clinical research and translational research and also as a treatment tool," emphasizing multi-disciplinary research for comprehensive data analysis that can contribute to the quality enhancement of public health.
 
-**1. Improved Patient Care:**
-• More accurate prognostication enables personalized treatment planning
-• Earlier identification of recovery potential allows for optimized rehabilitation timing
-• Reduction in unnecessary prolongation of futile care
-• Better allocation of ICU resources to patients most likely to benefit
+Early prognosis through reliable prediction of EEG assessments and time-to-awakening in comatose patients after cardiac arrest carries significant clinical and scientific impacts:
 
-**2. Support for Clinical Decision-Making:**
-• Provides evidence-based tools to supplement clinical judgment
-• Reduces the cognitive burden on intensivists during complex decision-making
-• Facilitates more confident discussions with families about prognosis
-• Helps navigate the ethical complexities of life-sustaining treatment decisions
+**1. Clinical Perspective - Improved Patient Care:**
+
+An accurate early prognosis can enhance patient care by guiding clinicians in tailoring treatments to individual needs. This can:
+• Optimize resource allocation and minimize harm by preventing premature withdrawal of life-sustaining treatment (WLST)
+• Reduce healthcare costs through more efficient ICU bed utilization
+• Ensure ethical decision-making aligned with patient prognosis and values
+• Improve crucial discussions with close relatives by providing evidence-based prognostic information
+• Enable personalized treatment planning based on reliable outcome predictions
+• Support better timing for rehabilitation interventions
+
+**2. Scientific Advancement:**
+
+This project holds significant potential to advance traditional machine learning and deep learning analysis to create a robust prognostic estimation tool with increased certainty towards neurological outcomes among comatose cardiac arrest survivors. Developing sophisticated algorithms for interpreting EEG data can transform clinical decision-making, offering new insights into the intricate dynamics of post-anoxic coma.
 
 **3. Reducing Prognostic Uncertainty:**
-Current prognostic markers leave approximately 30-40% of patients in grey areas where outcome prediction is highly uncertain. Our algorithms aim to reduce this proportion by more than half, providing clearer guidance for the majority of cases while appropriately flagging those requiring additional evaluation.
+
+Current prognostic markers leave approximately 30-40% of patients in grey areas where outcome prediction is highly uncertain. Our algorithms aim to reduce this proportion significantly, providing clearer guidance for the majority of cases while appropriately flagging those requiring additional evaluation.
 
 **4. Healthcare System Benefits:**
-• Optimized ICU bed utilization
-• Reduced overall healthcare costs through more efficient resource allocation
+
 • Standardized assessment protocols that can be implemented across institutions
 • Framework for ongoing quality improvement and outcome tracking
+• Contribution to the development of high-performance computing applications in healthcare
+• Support for interdisciplinary clinical research methodologies
 
 The ultimate goal is to ensure that every patient receives care aligned with their true prognosis and values, while supporting families and clinicians through what is often the most challenging phase of critical illness.`
   }

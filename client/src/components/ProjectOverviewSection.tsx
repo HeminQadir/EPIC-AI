@@ -18,14 +18,8 @@ const features = [
   {
     id: "ai-powered-analysis",
     icon: Lightbulb,
-    title: "AI-Powered Analysis",
-    description: "Develop multi-grading rule-based AI algorithms to predict neurophysiological outcomes from heterogeneous longitudinal EEG data."
-  },
-  {
-    id: "pattern-recognition",
-    icon: LineChart,
-    title: "Pattern Recognition",
-    description: "Identify discernible patterns that distinguish malignant EEG patterns from sedation effects and irreversible brain damage."
+    title: "AI-Powered Analysis & Pattern Recognition",
+    description: "Develop multi-grading rule-based AI algorithms using transformer networks with attention mechanisms to identify discernible patterns that distinguish malignant EEG patterns from sedation effects."
   },
   {
     id: "clinical-impact",
