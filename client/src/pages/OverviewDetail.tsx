@@ -1,6 +1,6 @@
 import { useRoute } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Lightbulb, LineChart, Shield, ImageIcon, Brain } from "lucide-react";
+import { Target, Lightbulb, LineChart, Shield, Brain } from "lucide-react";
 import epicAIFigure from "@assets/EPIC-AI_1759917976097.png";
 
 //todo: remove mock functionality
@@ -156,12 +156,12 @@ export default function OverviewDetail() {
             </CardContent>
           </Card>
 
-          <Card className="bg-accent/30">
-            <CardHeader>
-              <CardTitle className="font-heading text-2xl">Visual Representation</CardTitle>
-            </CardHeader>
-            <CardContent>
-              {section.hasCustomFigure ? (
+          {section.hasCustomFigure && (
+            <Card className="bg-accent/30">
+              <CardHeader>
+                <CardTitle className="font-heading text-2xl">Visual Representation</CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="flex justify-center bg-background p-6 rounded-lg">
                   <img
                     src={epicAIFigure}
@@ -170,16 +170,9 @@ export default function OverviewDetail() {
                     data-testid="img-research-framework"
                   />
                 </div>
-              ) : (
-                <div className="aspect-video w-full bg-muted rounded-lg flex flex-col items-center justify-center gap-4 p-8" data-testid="placeholder-figure">
-                  <ImageIcon className="w-16 h-16 text-muted-foreground/50" />
-                  <p className="text-muted-foreground text-center">
-                    Figure placeholder - Illustration showing {section.title.toLowerCase()}
-                  </p>
-                </div>
-              )}
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          )}
         </div>
       </div>
     </div>

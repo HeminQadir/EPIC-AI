@@ -1,6 +1,6 @@
 import { useRoute } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Package, Database, Brain, Users, ImageIcon } from "lucide-react";
+import { Package, Database, Brain, Users } from "lucide-react";
 
 const workPackageData: Record<string, any> = {
   "wp1-data-collection": {
@@ -318,20 +318,6 @@ export default function WorkPackageDetail() {
                     </p>
                   );
                 })}
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-accent/30">
-            <CardHeader>
-              <CardTitle className="font-heading text-2xl">Visual Representation</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="aspect-video w-full bg-muted rounded-lg flex flex-col items-center justify-center gap-4 p-8" data-testid="placeholder-figure">
-                <ImageIcon className="w-16 h-16 text-muted-foreground/50" />
-                <p className="text-muted-foreground text-center">
-                  Figure placeholder - Illustration showing {wp.title}
-                </p>
               </div>
             </CardContent>
           </Card>
