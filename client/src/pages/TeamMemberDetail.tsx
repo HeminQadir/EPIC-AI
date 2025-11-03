@@ -13,6 +13,7 @@ import haukurImage from "@assets/haukur_1762157384201.jpeg";
 import henningImage from "@assets/henning_1762157995038.jpeg";
 import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
+import perImage from "@assets/Steinar_1762165340846.jpg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -144,6 +145,7 @@ const teamMembersData: Record<string, any> = {
     expertise: ["Cardiology", "Clinical Research"],
     email: "p.s.halvorsen@medisin.uio.no",
     secondaryEmail: "sthalvor@ous-hf.no",
+    image: perImage,
     bio: "Prof. Per Steinar Halvorsen is a Consultant with expertise in cardiology and clinical research at Oslo University Hospital and University of Oslo.",
     links: {
       googleScholar: "https://scholar.google.com/citations?user=2ansca4AAAAJ&hl=en",

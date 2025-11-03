@@ -7,6 +7,7 @@ import haukurImage from "@assets/haukur_1762157384201.jpeg";
 import henningImage from "@assets/henning_1762157995038.jpeg";
 import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
+import perImage from "@assets/Steinar_1762165340846.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -99,7 +100,8 @@ const teamMembers = [
     affiliation: "Oslo University Hospital and University of Oslo",
     expertise: ["Cardiology", "Clinical Research"],
     email: "p.s.halvorsen@medisin.uio.no",
-    secondaryEmail: "sthalvor@ous-hf.no"
+    secondaryEmail: "sthalvor@ous-hf.no",
+    image: perImage
   }
 ];
 
