@@ -13,7 +13,7 @@ const statsData = [
   },
   {
     title: "EEG Recordings",
-    value: "1,423",
+    value: "10,000",
     description: "Longitudinal data points",
     icon: Activity,
     trend: { value: "8% increase", positive: true }
