@@ -215,7 +215,9 @@ export default function TeamMemberDetail() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium">Email (UiO)</p>
+                    <p className="text-sm font-medium">
+                      Email {member.email.includes('@medisin.uio.no') ? '(UiO)' : member.email.includes('@ous-hf.no') ? '(OUS)' : ''}
+                    </p>
                     <p className="text-sm text-muted-foreground truncate">{member.email}</p>
                   </div>
                 </a>
