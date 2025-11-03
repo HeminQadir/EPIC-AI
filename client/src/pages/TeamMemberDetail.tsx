@@ -87,6 +87,19 @@ const teamMembersData: Record<string, any> = {
       institutionPage: "https://oslo-universitetssykehus.no",
       orcid: "https://orcid.org/0000-0000-0000-0002"
     }
+  },
+  "henning-wimmer": {
+    name: "Dr. Henning Wimmer",
+    role: "Intensivist",
+    affiliation: "Oslo University Hospital Department of Neurology",
+    expertise: ["Neurology", "Clinical Neurophysiology", "Intensive Care"],
+    email: "UXWIMH@ous-hf.no",
+    bio: "Dr. Henning Wimmer is an Intensivist at Oslo University Hospital Department of Neurology. His expertise in neurology, clinical neurophysiology, and intensive care contributes to the critical care management of patients with neurological conditions.",
+    links: {
+      researchGate: "https://www.researchgate.net/profile/Henning-Wimmer",
+      linkedin: "https://www.linkedin.com/in/henning-wimmer-457209128/",
+      institutionPage: "https://ous-research.no/home/dam/Group-members/20735"
+    }
   }
 };
 

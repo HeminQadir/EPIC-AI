@@ -56,9 +56,9 @@ const teamMembers = [
   {
     id: "henning-wimmer",
     name: "Dr. Henning Wimmer",
-    role: "Neurologist",
+    role: "Intensivist",
     affiliation: "Oslo University Hospital Department of Neurology",
-    expertise: ["Neurology", "Clinical Neurophysiology"],
+    expertise: ["Neurology", "Clinical Neurophysiology", "Intensive Care"],
     email: "UXWIMH@ous-hf.no"
   },
   {
