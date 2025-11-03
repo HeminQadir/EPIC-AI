@@ -7,8 +7,8 @@ const workPackages = [
   {
     id: "wp1-data-collection",
     icon: Database,
-    title: "WP1: Data Collection & Harmonization",
-    description: "Systematic collection and standardization of multi-center EEG data, clinical parameters, and outcome measures from cardiac arrest survivors."
+    title: "WP1: Multi-grading Rule-based EEG Pattern Recognition Algorithm",
+    description: "Development of an automated multi-grading rule-based EEG assessment scheme describing and grading normal and pathological EEG patterns controlling for sedative effects."
   },
   {
     id: "wp2-ai-development",

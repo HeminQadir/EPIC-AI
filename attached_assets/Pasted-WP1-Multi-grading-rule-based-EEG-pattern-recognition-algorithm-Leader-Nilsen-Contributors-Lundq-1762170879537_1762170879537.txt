@@ -1,0 +1,36 @@
+WP1: Multi-grading rule-based EEG pattern recognition algorithm ; Leader: Nilsen
+Contributors: Lundqvist, Sunde, Andersen, Qadir, Balasingham; Personnel: Postdoc, Ph.D., Nurse
+Aims and Objectives: A retrospective study using our EEG database is designed to yield an auto-
+mated multi-grading rule-based EEG assessment scheme describing and grading normal and patho-
+logical EEG patterns controlling for sedative effects.
+Task 1.1: Establish project-specific database
+A project-specific dataset will be established by combining information on sedation (yes/no) and EEG
+features annotated using the SCORE nomenclature in collaboration with Nurse. The combined an-
+notation for the EEG recordings will have the following multilevel grading groups: Non-sedated/Non-
+malignant, Sedated/Non-malignant, Non-sedated/Highly Malignant, Sedated/Highly Malignant. Here,
+the Non-Sedated/Non-Malignant group defines the (Control Group for study Population) good prog-
+nosis and the other three groups describe the pathological EEG patterns towards poor prognosis.
+Task 1.2: AI model development for assessment of EEG patterns relevant for prognostication
+The raw EEGs annotated in Task 1.1 are used to develop three AI-based models: two for binary
+classification and one for four-class categorization. The first binary classification model determines
+whether the patient is sedated or not, while the second distinguishes between highly malignant and
+benign conditions. The third model is a four-class categorization system that classifies EEG data
+into one of four categories: non-sedated/non-malignant, sedated/non-malignant, non-sedated/highly
+malignant, and sedated/highly malignant.
+Transformer networks (TNs) with attention mechanisms (AMs) [19] have recently become prominent
+in natural language processing, largely due to their scalability and their ability to build attention maps
+that identify correlations between words (tokens). Their versatility and robustness have led to their
+adaptation in various advanced applications, including ChatGPT. Given these strengths, TNs present
+an intriguing avenue for further exploration of time-series EEG data, as they can be leveraged to
+uncover complex patterns and relationships both within individual EEG channels (intra-channel) and
+between different channels (inter-channel).
+In our approach, we will segment EEG recordings into n-second windows, transforming these seg-
+ments into tokens. This allows our customized TN to process the data and build an attention maps.
+Tokenization of segments facilitates TN to identify complex correlations within the EEG signals. To
+capture the complex relationships within EEG data, the AM can be customized to focus on both lo-
+cal and global interactions. This involves creating a multi-head AM of TN where different heads are
+5
+designed to analyze localized patterns within adjacent segments as well as broader patterns across
+multiple segments. Additionally, considering that EEG data are collected from multiple channels
+(electrodes), the AM can be tailored to emphasize inter-channel relationships, allowing the model to
+prioritize and learn from the most informative channels for specific neurological conditions.

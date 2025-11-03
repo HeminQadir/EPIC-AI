@@ -4,33 +4,36 @@ import { Package, Database, Brain, Users, ImageIcon } from "lucide-react";
 
 const workPackageData: Record<string, any> = {
   "wp1-data-collection": {
-    title: "WP1: Data Collection & Harmonization",
+    title: "WP1: Multi-grading Rule-based EEG Pattern Recognition Algorithm",
     icon: Database,
-    summary: "Systematic collection and standardization of multi-center EEG data, clinical parameters, and outcome measures from cardiac arrest survivors.",
-    content: `This work package focuses on establishing a comprehensive, multi-center database of high-quality EEG recordings and associated clinical data from comatose cardiac arrest survivors.
+    summary: "Development of an automated multi-grading rule-based EEG assessment scheme describing and grading normal and pathological EEG patterns controlling for sedative effects.",
+    leader: "Nilsen",
+    contributors: "Lundqvist, Sunde, Andersen, Qadir, Balasingham",
+    personnel: "Postdoc, Ph.D., Nurse",
+    content: `Aims and Objectives:
+A retrospective study using our EEG database is designed to yield an automated multi-grading rule-based EEG assessment scheme describing and grading normal and pathological EEG patterns controlling for sedative effects.
 
-Objectives:
-• Develop standardized protocols for EEG data acquisition across participating centers
-• Establish quality control measures to ensure data integrity and consistency
-• Create a unified data format for harmonizing heterogeneous datasets
-• Implement secure data storage and sharing infrastructure compliant with privacy regulations
+Task 1.1: Establish Project-Specific Database
 
-Data Collection Strategy:
-The work package employs both retrospective and prospective data collection approaches. Retrospective data includes historical EEG recordings and clinical outcomes from existing databases, while prospective collection follows patients from admission through long-term follow-up.
+A project-specific dataset will be established by combining information on sedation (yes/no) and EEG features annotated using the SCORE nomenclature in collaboration with Nurse. The combined annotation for the EEG recordings will have the following multilevel grading groups:
+• Non-sedated/Non-malignant
+• Sedated/Non-malignant
+• Non-sedated/Highly Malignant
+• Sedated/Highly Malignant
 
-Key data elements include:
-- Continuous EEG recordings (minimum 24-48 hours)
-- Clinical parameters (age, arrest characteristics, cooling protocols)
-- Medication records (sedation, anti-epileptics)
-- Neurological examination findings
-- Neuroimaging results when available
-- Outcome assessments at discharge, 3 months, and 6 months
+The Non-Sedated/Non-Malignant group defines the (Control Group for study Population) good prognosis and the other three groups describe the pathological EEG patterns towards poor prognosis.
 
-Quality Assurance:
-All data undergoes rigorous quality checks, including artifact detection in EEG recordings, validation of clinical parameter ranges, and verification of outcome assessments. Missing data patterns are analyzed and addressed through targeted collection protocols.
+Task 1.2: AI Model Development for Assessment of EEG Patterns Relevant for Prognostication
 
-Expected Outcomes:
-A harmonized dataset of at least 1,000 patients with complete EEG and clinical data, forming the foundation for AI algorithm development and validation in subsequent work packages.`
+The raw EEGs annotated in Task 1.1 are used to develop three AI-based models: two for binary classification and one for four-class categorization. The first binary classification model determines whether the patient is sedated or not, while the second distinguishes between highly malignant and benign conditions. The third model is a four-class categorization system that classifies EEG data into one of four categories: non-sedated/non-malignant, sedated/non-malignant, non-sedated/highly malignant, and sedated/highly malignant.
+
+Transformer Networks with Attention Mechanisms:
+
+Transformer networks (TNs) with attention mechanisms (AMs) have recently become prominent in natural language processing, largely due to their scalability and their ability to build attention maps that identify correlations between words (tokens). Their versatility and robustness have led to their adaptation in various advanced applications, including ChatGPT. Given these strengths, TNs present an intriguing avenue for further exploration of time-series EEG data, as they can be leveraged to uncover complex patterns and relationships both within individual EEG channels (intra-channel) and between different channels (inter-channel).
+
+In our approach, we will segment EEG recordings into n-second windows, transforming these segments into tokens. This allows our customized TN to process the data and build attention maps. Tokenization of segments facilitates TN to identify complex correlations within the EEG signals.
+
+To capture the complex relationships within EEG data, the AM can be customized to focus on both local and global interactions. This involves creating a multi-head AM of TN where different heads are designed to analyze localized patterns within adjacent segments as well as broader patterns across multiple segments. Additionally, considering that EEG data are collected from multiple channels (electrodes), the AM can be tailored to emphasize inter-channel relationships, allowing the model to prioritize and learn from the most informative channels for specific neurological conditions.`
   },
   "wp2-ai-development": {
     title: "WP2: AI Algorithm Development",
