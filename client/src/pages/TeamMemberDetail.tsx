@@ -6,6 +6,7 @@ import { ExternalLink, Mail } from "lucide-react";
 import { SiLinkedin, SiGooglescholar, SiOrcid } from "react-icons/si";
 import heminImage from "@assets/hEMIN_1760013406099.jpg";
 import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jpeg";
+import kjetilImage from "@assets/kjsunde_1762155852941.png";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -15,6 +16,7 @@ const teamMembersData: Record<string, any> = {
     affiliation: "Dept of Anesthesia and Intensive Care Medicine, OUS and Institute of Clinical Medicine, UiO",
     expertise: ["Cardiac Arrest", "Post-Resuscitation Care", "Neurocritical Care"],
     email: "kjetil.sunde@medisin.uio.no",
+    image: kjetilImage,
     bio: "Dr. Kjetil Sunde is a professor at the Department of Anesthesia and Intensive Care Medicine, OUS and the Institute of Clinical Medicine, UiO. He is heading the \"Brain-Heart\" research group and works in the surgical and neurosurgical ICU at OUS Ullevål. He has extensive research experience in experimental and clinical cardiac arrest and post-resuscitation care studies, and was the main supervisor of NORCAST. He will be the project leader and responsible for WP3.",
     links: {
       linkedin: "https://linkedin.com/in/example",
