@@ -59,7 +59,7 @@ const teamMembers = [
     role: "Neurologist",
     affiliation: "Oslo University Hospital Department of Neurology",
     expertise: ["Neurology", "Clinical Neurophysiology"],
-    email: "henning.wimmer@oslo-universitetssykehus.no"
+    email: "UXWIMH@ous-hf.no"
   },
   {
     id: "line-maria",
