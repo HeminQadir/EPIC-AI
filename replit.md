@@ -85,7 +85,24 @@ Preferred communication style: Simple, everyday language.
 - **Production**: Node.js server serving pre-built static assets
 
 **Third-Party Services (Potential Integration Points):**
-- Email service for contact form submissions (currently mock)
+- Email service for contact form submissions - **PENDING**: User dismissed Resend integration setup. Contact form endpoint exists at `/api/contact` and sends to all team member emails, but actual email delivery is not configured. Options: (1) User provides email service API key (Resend, SendGrid, etc.), or (2) Use alternative notification system like database storage.
 - Document hosting for PDF publications (currently placeholder links)
 - Analytics for research dissemination tracking (not yet implemented)
 - DOI resolution services for publication metadata
+
+## Contact Form Configuration
+
+**Current Status:**
+- Contact form endpoint: `/api/contact` (functional)
+- Configured to send to all 15 research team member email addresses
+- Email sending: NOT ACTIVE (requires email service API key)
+- All team member emails are collected from Team page data
+
+**To Enable Email Sending:**
+User needs to provide API credentials from an email service provider such as:
+- Resend (recommended)
+- SendGrid
+- Mailgun
+- Any transactional email service
+
+Once credentials are provided, they can be stored as secrets and the email functionality will be activated.
