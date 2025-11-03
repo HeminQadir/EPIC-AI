@@ -10,6 +10,7 @@ import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 import perImage from "@assets/Steinar_1762165340846.jpg";
 import lineImage from "@assets/Line-Besos-Ulvin_web_1762165590836.jpg";
 import christoferImage from "@assets/anderchr_1762169871360.jpg";
+import espenImage from "@assets/Espen_1762170283412.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -114,6 +115,15 @@ const teamMembers = [
     expertise: ["Neurology", "Prognostication", "Long-term Outcomes", "Neurophysiology"],
     email: "a.c.lundqvist@medisin.uio.no",
     image: christoferImage
+  },
+  {
+    id: "espen-nakstad",
+    name: "Dr. Espen Rostrup Nakstad",
+    role: "Director and Chief Physician (CBRNE), MD, PhD",
+    affiliation: "Norwegian National Unit for CBRNE Medicine, Oslo University Hospital",
+    expertise: ["Internal Medicine", "Respiratory Medicine", "CBRNE Medicine", "Post-Resuscitation Care"],
+    email: "UXNAES@ous-hf.no",
+    image: espenImage
   }
 ];
 

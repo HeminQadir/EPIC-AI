@@ -16,6 +16,7 @@ import geirImage from "@assets/GO-Andersen_1762164717832.jpg";
 import perImage from "@assets/Steinar_1762165340846.jpg";
 import lineImage from "@assets/Line-Besos-Ulvin_web_1762165590836.jpg";
 import christoferImage from "@assets/anderchr_1762169871360.jpg";
+import espenImage from "@assets/Espen_1762170283412.jpg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -181,6 +182,21 @@ const teamMembersData: Record<string, any> = {
       linkedin: "https://www.linkedin.com/in/christofer-lundqvist-54a94919/",
       researchGate: "https://www.researchgate.net/profile/Christofer-Lundqvist/2",
       institutionPage: "https://www.med.uio.no/klinmed/personer/vit/anderchr/"
+    }
+  },
+  "espen-nakstad": {
+    name: "Dr. Espen Rostrup Nakstad",
+    role: "Director and Chief Physician (CBRNE), MD, PhD",
+    affiliation: "Norwegian National Unit for CBRNE Medicine, Oslo University Hospital (Ullevål)",
+    expertise: ["Internal Medicine", "Respiratory Medicine", "CBRNE Medicine", "Post-Resuscitation Care"],
+    email: "UXNAES@ous-hf.no",
+    image: espenImage,
+    bio: "Dr. Espen Rostrup Nakstad is Director and Chief Physician of the Norwegian National Unit for CBRNE Medicine at Oslo University Hospital (Ullevål). He is a pioneer and Principal Investigator of the NORCAST trial and has extensive experience in internal medicine and respiratory medicine.\n\nHis research focuses on out-of-hospital cardiac arrest, post-resuscitation care, respiratory medicine, and CBRNE (Chemical, Biological, Radiological, Nuclear, and Explosive) preparedness. He has been instrumental in leading the prospective Norwegian Cardio-Respiratory Arrest Study (NORCAST), which has significantly contributed to understanding late awakening, prognostic factors, and long-term outcomes in cardiac arrest survivors.\n\nDr. Nakstad has published extensively on cardiac arrest outcomes, health-related quality of life in survivors, acute kidney injury prediction, therapeutic hypothermia, and respiratory care. His work spans critical care, emergency medicine, and public health preparedness. In the EPIC-AI project, he will be responsible for WP2 and contribute to WP5.",
+    researchProfile: ["Cardiac Arrest", "Post-Resuscitation Care", "Respiratory Medicine", "CBRNE Medicine", "Long-term Outcomes"],
+    links: {
+      linkedin: "https://www.linkedin.com/in/espen-rostrup-nakstad-5b998973/",
+      researchGate: "https://www.researchgate.net/profile/Espen-Nakstad",
+      ousPage: "https://ous-research.no/home/dam/Group-members/20734"
     }
   }
 };
