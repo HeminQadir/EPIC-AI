@@ -136,6 +136,20 @@ const teamMembersData: Record<string, any> = {
     links: {
       ousPage: "https://www.ous-research.no/home/cic/Group-members/11491"
     }
+  },
+  "per-halvorsen": {
+    name: "Prof. Per Steinar Halvorsen",
+    role: "Consultant, MD, PhD",
+    affiliation: "Oslo University Hospital and University of Oslo",
+    expertise: ["Cardiology", "Clinical Research"],
+    email: "p.s.halvorsen@medisin.uio.no",
+    secondaryEmail: "sthalvor@ous-hf.no",
+    bio: "Prof. Per Steinar Halvorsen is a Consultant with expertise in cardiology and clinical research at Oslo University Hospital and University of Oslo.",
+    links: {
+      googleScholar: "https://scholar.google.com/citations?user=2ansca4AAAAJ&hl=en",
+      institutionPage: "https://www.med.uio.no/klinmed/personer/vit/pershal/index.html",
+      ousPage: "https://www.ous-research.no/home/pshalvorsen/Group+members/13705"
+    }
   }
 };
 

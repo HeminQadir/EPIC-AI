@@ -91,6 +91,15 @@ const teamMembers = [
     expertise: ["Clinical Trials", "Translational Research", "Cardiac Intensive Care"],
     email: "uxgend@ous-hf.no",
     image: geirImage
+  },
+  {
+    id: "per-halvorsen",
+    name: "Prof. Per Steinar Halvorsen",
+    role: "Consultant, MD, PhD",
+    affiliation: "Oslo University Hospital and University of Oslo",
+    expertise: ["Cardiology", "Clinical Research"],
+    email: "p.s.halvorsen@medisin.uio.no",
+    secondaryEmail: "sthalvor@ous-hf.no"
   }
 ];
 
