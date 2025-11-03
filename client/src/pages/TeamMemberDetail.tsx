@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Mail } from "lucide-react";
-import { SiLinkedin, SiGooglescholar, SiOrcid } from "react-icons/si";
+import { SiLinkedin, SiGooglescholar, SiOrcid, SiResearchgate } from "react-icons/si";
 import heminImage from "@assets/hEMIN_1760013406099.jpg";
 import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jpeg";
 import kjetilImage from "@assets/kjsunde_1762155852941.png";
@@ -17,13 +17,13 @@ const teamMembersData: Record<string, any> = {
     affiliation: "Dept of Anesthesia and Intensive Care Medicine, OUS and Institute of Clinical Medicine, UiO",
     expertise: ["Cardiac Arrest", "Post-Resuscitation Care", "Neurocritical Care"],
     email: "kjetil.sunde@medisin.uio.no",
+    secondaryEmail: "UXKJSU@ous-hf.no",
     image: kjetilImage,
     bio: "Prof. Kjetil Sunde is a professor at the Department of Anesthesia and Intensive Care Medicine, OUS and the Institute of Clinical Medicine, UiO. He is heading the \"Brain-Heart\" research group and works in the surgical and neurosurgical ICU at OUS Ullevål. He has extensive research experience in experimental and clinical cardiac arrest and post-resuscitation care studies, and was the main supervisor of NORCAST. He will be the project leader and responsible for WP3.",
     links: {
-      linkedin: "https://linkedin.com/in/example",
-      googleScholar: "https://scholar.google.com/citations?user=example",
-      institutionPage: "https://www.med.uio.no/klinmed/english/people/aca/kjetils/",
-      orcid: "https://orcid.org/0000-0000-0000-0000"
+      institutionPage: "https://www.med.uio.no/klinmed/english/people/aca/kjetilsu/index.html",
+      ousPage: "https://ous-research.no/home/oscar/Group+members/11245",
+      researchGate: "https://www.researchgate.net/profile/Kjetil-Sunde"
     }
   },
   "kristian-nilsen": {
@@ -198,8 +198,24 @@ export default function TeamMemberDetail() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium">Email</p>
+                    <p className="text-sm font-medium">Email (UiO)</p>
                     <p className="text-sm text-muted-foreground truncate">{member.email}</p>
+                  </div>
+                </a>
+              )}
+
+              {member.secondaryEmail && (
+                <a
+                  href={`mailto:${member.secondaryEmail}`}
+                  className="flex items-center gap-3 p-3 rounded-md hover-elevate active-elevate-2"
+                  data-testid="link-secondary-email"
+                >
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium">Email (OUS-HF)</p>
+                    <p className="text-sm text-muted-foreground truncate">{member.secondaryEmail}</p>
                   </div>
                 </a>
               )}
@@ -254,8 +270,46 @@ export default function TeamMemberDetail() {
                     <ExternalLink className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium">Institution Page</p>
+                    <p className="text-sm font-medium">Institution Page (UiO)</p>
                     <p className="text-sm text-muted-foreground">Faculty profile page</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                </a>
+              )}
+
+              {member.links.ousPage && (
+                <a
+                  href={member.links.ousPage}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-md hover-elevate active-elevate-2"
+                  data-testid="link-ous"
+                >
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <ExternalLink className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium">Oslo University Hospital</p>
+                    <p className="text-sm text-muted-foreground">Research profile page</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                </a>
+              )}
+
+              {member.links.researchGate && (
+                <a
+                  href={member.links.researchGate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-md hover-elevate active-elevate-2"
+                  data-testid="link-researchgate"
+                >
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <SiResearchgate className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium">ResearchGate</p>
+                    <p className="text-sm text-muted-foreground">View research profile</p>
                   </div>
                   <ExternalLink className="w-4 h-4 text-muted-foreground" />
                 </a>

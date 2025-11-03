@@ -13,6 +13,7 @@ const teamMembers = [
     affiliation: "Dept of Anesthesia and Intensive Care Medicine, OUS and Institute of Clinical Medicine, UiO",
     expertise: ["Cardiac Arrest", "Post-Resuscitation Care", "Neurocritical Care"],
     email: "kjetil.sunde@medisin.uio.no",
+    secondaryEmail: "UXKJSU@ous-hf.no",
     image: kjetilImage
   },
   {
