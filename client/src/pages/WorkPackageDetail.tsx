@@ -273,6 +273,34 @@ export default function WorkPackageDetail() {
 
   const Icon = wp.icon;
 
+  // Helper function to determine if a paragraph is a heading
+  const isHeading = (text: string) => {
+    const trimmed = text.trim();
+    // Check if it's a Task heading or ends with a colon (subtitle pattern)
+    return trimmed.startsWith('Task ') || 
+           trimmed.endsWith(':') || 
+           trimmed.startsWith('Aims and Objectives') ||
+           trimmed.startsWith('Expected Results') ||
+           trimmed.startsWith('Target Publications');
+  };
+
+  // Helper function to get heading level
+  const getHeadingStyle = (text: string) => {
+    const trimmed = text.trim();
+    // Main section headings (Task X.X)
+    if (trimmed.startsWith('Task ')) {
+      return "font-heading font-bold text-2xl mt-8 mb-4 text-foreground";
+    }
+    // Major sections
+    if (trimmed.startsWith('Aims and Objectives') || 
+        trimmed.startsWith('Expected Results') || 
+        trimmed.startsWith('Target Publications')) {
+      return "font-heading font-bold text-xl mt-6 mb-3 text-foreground";
+    }
+    // Subsections (ending with colon)
+    return "font-semibold text-lg mt-4 mb-2 text-foreground";
+  };
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -295,11 +323,20 @@ export default function WorkPackageDetail() {
             </CardHeader>
             <CardContent>
               <div className="prose prose-slate dark:prose-invert max-w-none">
-                {wp.content.split('\n\n').map((paragraph: string, index: number) => (
-                  <p key={index} className="text-foreground leading-relaxed mb-4 whitespace-pre-line">
-                    {paragraph}
-                  </p>
-                ))}
+                {wp.content.split('\n\n').map((paragraph: string, index: number) => {
+                  if (isHeading(paragraph)) {
+                    return (
+                      <h3 key={index} className={getHeadingStyle(paragraph)}>
+                        {paragraph}
+                      </h3>
+                    );
+                  }
+                  return (
+                    <p key={index} className="text-foreground leading-relaxed mb-4 whitespace-pre-line">
+                      {paragraph}
+                    </p>
+                  );
+                })}
               </div>
             </CardContent>
           </Card>
