@@ -2,6 +2,7 @@ import TeamMember from "@/components/TeamMember";
 import heminImage from "@assets/hEMIN_1760013406099.jpg";
 import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jpeg";
 import kjetilImage from "@assets/kjsunde_1762155852941.png";
+import naimahmedImage from "@assets/Naimahmed-Nesarag_1762156443954.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -38,7 +39,8 @@ const teamMembers = [
     role: "AI Researcher",
     affiliation: "Intervention Centre, Oslo University Hospital",
     expertise: ["AI", "Machine Learning", "Signal Processing"],
-    email: "naimahmed.nesaragi@oslo-universitetssykehus.no"
+    email: "naimahmed.nesaragi@oslo-universitetssykehus.no",
+    image: naimahmedImage
   },
   {
     id: "haukur-gudmundsson",
