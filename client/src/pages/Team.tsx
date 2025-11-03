@@ -5,6 +5,7 @@ import kjetilImage from "@assets/kjsunde_1762155852941.png";
 import naimahmedImage from "@assets/Naimahmed-Nesarag_1762156443954.jpg";
 import haukurImage from "@assets/haukur_1762157384201.jpeg";
 import henningImage from "@assets/henning_1762157995038.jpeg";
+import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 
 //todo: remove mock functionality
 const teamMembers = [
@@ -70,6 +71,16 @@ const teamMembers = [
     affiliation: "Oslo University Hospital Department of Neurology",
     expertise: ["Neurology", "Clinical Neurophysiology"],
     email: "line.maria@oslo-universitetssykehus.no"
+  },
+  {
+    id: "ilangko-balasingham",
+    name: "Prof. Ilangko Sellappah Balasingham",
+    role: "Professor",
+    affiliation: "Faculty of Information Technology and Electrical Engineering, NTNU",
+    expertise: ["Medical Signal Processing", "Communications", "Biomedical Sensor Networks"],
+    email: "ilangko.balasingham@ntnu.no",
+    secondaryEmail: "i.s.balasingham@ous-research.no",
+    image: ilangkoImage
   }
 ];
 

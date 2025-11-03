@@ -4,12 +4,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Mail } from "lucide-react";
 import { SiLinkedin, SiGooglescholar, SiOrcid, SiResearchgate } from "react-icons/si";
+import { Globe } from "lucide-react";
 import heminImage from "@assets/hEMIN_1760013406099.jpg";
 import kristianImage from "@assets/Kristian-Bernhard-Nilsen_web_1762155715964.jpeg";
 import kjetilImage from "@assets/kjsunde_1762155852941.png";
 import naimahmedImage from "@assets/Naimahmed-Nesarag_1762156443954.jpg";
 import haukurImage from "@assets/haukur_1762157384201.jpeg";
 import henningImage from "@assets/henning_1762157995038.jpeg";
+import ilangkoImage from "@assets/ilangko_1762158323336.jpg";
 
 //todo: remove mock functionality
 const teamMembersData: Record<string, any> = {
@@ -101,6 +103,23 @@ const teamMembersData: Record<string, any> = {
       researchGate: "https://www.researchgate.net/profile/Henning-Wimmer",
       linkedin: "https://www.linkedin.com/in/henning-wimmer-457209128/",
       institutionPage: "https://ous-research.no/home/dam/Group-members/20735"
+    }
+  },
+  "ilangko-balasingham": {
+    name: "Prof. Ilangko Sellappah Balasingham",
+    role: "Professor",
+    affiliation: "Faculty of Information Technology and Electrical Engineering, NTNU",
+    secondaryAffiliation: "Head of Section for Medical ICT R&D, Intervention Centre, Oslo University Hospital",
+    expertise: ["Medical Signal Processing", "Communications", "Biomedical Sensor Networks"],
+    email: "ilangko.balasingham@ntnu.no",
+    secondaryEmail: "i.s.balasingham@ous-research.no",
+    image: ilangkoImage,
+    bio: "Ilangko Balasingham received the Siv.Ing.(MSc) and Dr.Ing.(PhD) degrees both in signal processing from the Signal Processing Group, Department of Electronic Systems, Norwegian University of Science and Technology (NTNU), Trondheim, Norway in 1993 and 1998, respectively. He did his Master thesis at the University of California in Santa Barbara, USA under the supervision of Prof. Sanjit K. Mitra. His PhD supervisor was Prof. Tor A. Ramstad at NTNU in Trondheim, Norway.\n\nFrom 1998 to 2002, he was employed as a Research Engineer developing video streaming solutions to mobile handheld devices at Fast Search & Transfer ASA, Oslo, Norway. Fast, which was a startup company in 1998, was acquired by Microsoft Inc. in 2008. Since 2002, he has been with the Intervention Centre, Oslo University Hospital - Rikshospitalet, Oslo, Norway as a Senior Research Scientist and Founder and Head of the Biomedical Sensor Network Research Group. He was appointed as a Professor of Medical Signal Processing and Communications at NTNU in 2006. In 2017, he was promoted Head of Section for Medical ICT R&D at the Intervention Center.\n\nHe was Professor by courtesy at the Frontier Institute, Nagoya Institute of Technology, Nagoya, Japan during the academic year 2016-2017.",
+    links: {
+      googleScholar: "https://scholar.google.com/citations?user=CynghwgAAAAJ&hl=en",
+      personalWebsite: "https://www.balasingham.com/",
+      institutionPage: "https://www.ntnu.edu/employees/ilangko.balasingham",
+      ousPage: "https://ous-research.no/home/balasingham/Group-members/8089"
     }
   }
 };
@@ -277,6 +296,25 @@ export default function TeamMemberDetail() {
                 </a>
               )}
 
+              {member.links.personalWebsite && (
+                <a
+                  href={member.links.personalWebsite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-md hover-elevate active-elevate-2"
+                  data-testid="link-personal-website"
+                >
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Globe className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium">Personal Website</p>
+                    <p className="text-sm text-muted-foreground">Visit personal website</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                </a>
+              )}
+
               {member.links.institutionPage && (
                 <a
                   href={member.links.institutionPage}
@@ -289,7 +327,9 @@ export default function TeamMemberDetail() {
                     <ExternalLink className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium">Institution Page (UiO)</p>
+                    <p className="text-sm font-medium">
+                      Institution Page {member.links.institutionPage.includes('uio.no') ? '(UiO)' : member.links.institutionPage.includes('ntnu.no') ? '(NTNU)' : ''}
+                    </p>
                     <p className="text-sm text-muted-foreground">Faculty profile page</p>
                   </div>
                   <ExternalLink className="w-4 h-4 text-muted-foreground" />
