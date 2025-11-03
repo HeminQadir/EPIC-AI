@@ -1,0 +1,37 @@
+WP2: Extend multi-grading rule-based assessment scheme for multi-modal scenarios;
+Leader: Nakstad Contributors: Lundqvist, Sunde, Qadir, Nesaragi; Personnel: Postdoc, Ph.D.,
+Nurse
+Aims and Objectives: A retrospective study using the NORCAST database is designed in collab-
+oration with Nurse to yield an automated multi-grading rule-based EEG assessment similar to WP1
+but extended for multi-modal scenarios using a model combining EEG pattern recognition, NSE at
+24, 48 and 72 hrs, and clinical variables like GCS, PLR, and corneal reflexes.
+Tasks: Establish a Project-specific multi-modal database and develop multi-modal AI models
+relevant for prognostication
+Task 2.1 First, a project-specific EEG dataset will be established by combining rudimentary informa-
+tion on sedation (yes/no) and HMEP annotated using the SCORE nomenclature adapting data from
+NORCAST. Task 2.2 A similar design of three AI models is carried out as in WP1. Next, we map
+the above multi-level graded labeling with four groups to binary prognostication outcome (good vs
+poor). Here, the EEG modality approach described in WP1 will be extended to a multimodal frame-
+work incorporating the additional data sources. Each data modality will represent different aspects
+of neurological function in the TN architecture. The EEG data will continue to be processed and
+tokenized as previously outlined, while the additional modalities will be encoded as supplementary
+input features. These inputs will be synchronized with the EEG segments based on the alignment
+and relevance to the clinical condition being studied. To handle the multimodal inputs, the AM within
+the TN will be extended to simultaneously focus on intra-modality (e.g., EEG-specific patterns) and
+inter-modality interactions (e.g., relationships between EEG signals and clinical variables). This will
+involve designing specialized heads within the multi-head AM of TN, where some heads are ded-
+icated to identifying correlations within individual modalities, while others focus on cross-modality
+interactions. By customizing the AM in this manner, the TN will be equipped to capture complex,
+high-dimensional relationships across the different data types. Task 2.3 Similar steps relevant to
+clinical advisory on the model development and internal validation will be followed as in WP1. In
+addition, comparison between the single-modality (EEG-only) and the multimodal model will be con-
+ducted by evaluating their performance on the same classification tasks. We will assess the models
+using accuracy, precision, recall, and F1-score metrics. The goal of multi-modal prognostication is
+to use additional information from other modalities to validate EEG assessments. This information
+6
+can serve as a secondary voting scheme to further enhance/guide the EEG reliability/assessment in
+neuro-prognostication.
+Expected results and deliverables: D2.1: Project-specific database (M18); D2.2: Multi-grading assess-
+ment scheme for multi-modal scenarios (M30); and D2.3: Improve the rule-based EEG algorithm from WP1
+using additional information from other modalities(M36). Target: 1 congress (ISICEM); 2 Journal Papers
+(IEEE-JBHI, Physiological Measurement)

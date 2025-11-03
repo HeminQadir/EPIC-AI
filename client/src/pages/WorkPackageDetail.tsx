@@ -55,48 +55,46 @@ Target Publications:
 • 3 Journal papers`
   },
   "wp2-ai-development": {
-    title: "WP2: AI Algorithm Development",
+    title: "WP2: Multi-modal Assessment Scheme Extension",
     icon: Brain,
-    summary: "Design and implementation of machine learning models for automated EEG analysis and prognostic assessment.",
-    content: `This work package is dedicated to developing sophisticated artificial intelligence algorithms capable of analyzing EEG patterns and predicting neurological outcomes in cardiac arrest survivors.
+    summary: "Extending the multi-grading rule-based EEG assessment scheme for multi-modal scenarios using EEG pattern recognition combined with NSE and clinical variables.",
+    leader: "Nakstad",
+    contributors: "Lundqvist, Sunde, Qadir, Nesaragi",
+    personnel: "Postdoc, Ph.D., Nurse",
+    content: `Aims and Objectives:
+Develop an automated multi-grading rule-based assessment similar to WP1, extended for multi-modal scenarios combining EEG pattern recognition, NSE at 24, 48 and 72 hrs, and clinical variables (GCS, PLR, and corneal reflexes) using the NORCAST database.
 
-Core Objectives:
-• Design deep learning architectures optimized for time-series EEG data analysis
-• Develop automated feature extraction methods for identifying prognostic EEG patterns
-• Create multi-modal models integrating EEG with clinical and imaging data
-• Implement explainable AI techniques for clinical interpretability
+Task 2.1: Establish Project-Specific Multi-modal Database
 
-Algorithm Development Approach:
-The development process employs state-of-the-art machine learning techniques including convolutional neural networks (CNNs) for spatial pattern recognition, recurrent neural networks (RNNs) for temporal dynamics, and transformer architectures for long-range dependencies.
+Establish an EEG dataset by combining sedation information (yes/no) and HMEP annotated using SCORE nomenclature, adapting data from NORCAST.
 
-Key Technical Components:
+Task 2.2: Develop Multi-modal AI Models for Prognostication
 
-Preprocessing Pipeline:
-- Automated artifact removal and noise reduction
-- Normalization across different recording devices
-- Segmentation into clinically relevant epochs
-- Feature engineering from raw signals
+Develop three AI models similar to WP1, then map the multi-level graded labeling (four groups) to binary prognostication outcomes (good vs poor).
 
-Model Architecture:
-- Multi-scale temporal convolutions for pattern detection
-- Attention mechanisms for highlighting critical segments
-- Ensemble methods combining multiple model predictions
-- Uncertainty quantification for confidence estimates
+Multi-modal Framework Extension:
 
-Sedation Modeling:
-A critical innovation is the explicit modeling of sedation effects on EEG patterns. The algorithms learn to distinguish between reversible sedation-related changes and irreversible brain injury markers through:
-- Pharmacokinetic-informed neural networks
-- Time-varying covariate models
-- Multi-task learning frameworks
+The EEG modality approach from WP1 will be extended to incorporate additional data sources. Each data modality will represent different aspects of neurological function in the TN architecture:
+• EEG data processed and tokenized as in WP1
+• Additional modalities encoded as supplementary input features
+• All inputs synchronized with EEG segments based on clinical condition alignment
 
-Validation Strategy:
-Models are validated using cross-validation on the harmonized dataset from WP1, with particular attention to:
-- Calibration of probability estimates
-- Performance across different subgroups
-- Robustness to missing data and artifacts
-- Generalization to new centers
+The attention mechanism will be extended to handle both intra-modality (e.g., EEG-specific patterns) and inter-modality interactions (e.g., relationships between EEG signals and clinical variables). Specialized heads within the multi-head attention mechanism will focus on correlations within individual modalities and cross-modality interactions, capturing complex, high-dimensional relationships across different data types.
 
-The algorithms are designed to provide not just predictions, but also interpretable explanations highlighting which EEG features drive each prognostic assessment.`
+Task 2.3: Clinical Advisory, Validation, and Model Comparison
+
+Follow similar clinical advisory and internal validation steps as WP1. Additionally, compare single-modality (EEG-only) and multimodal model performance using accuracy, precision, recall, and F1-score metrics.
+
+The goal is to use additional information from other modalities to validate EEG assessments, serving as a secondary voting scheme to enhance EEG reliability in neuro-prognostication.
+
+Expected Results and Deliverables:
+• Project-specific database (M18)
+• Multi-grading assessment scheme for multi-modal scenarios (M30)
+• Improved rule-based EEG algorithm from WP1 using additional modalities (M36)
+
+Target Publications:
+• 1 Conference paper
+• 2 Journal papers`
   },
   "wp3-clinical-validation": {
     title: "WP3: Clinical Validation",

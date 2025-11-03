@@ -13,8 +13,8 @@ const workPackages = [
   {
     id: "wp2-ai-development",
     icon: Brain,
-    title: "WP2: AI Algorithm Development",
-    description: "Design and implementation of machine learning models for automated EEG analysis and prognostic assessment."
+    title: "WP2: Multi-modal Assessment Scheme Extension",
+    description: "Extending the multi-grading rule-based EEG assessment scheme for multi-modal scenarios using EEG pattern recognition combined with NSE and clinical variables."
   },
   {
     id: "wp3-clinical-validation",
