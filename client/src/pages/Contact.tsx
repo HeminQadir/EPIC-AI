@@ -6,7 +6,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "research@neuroprognosis.org"
+    content: "kjetil.sunde@medisin.uio.no"
   },
   {
     icon: Phone,

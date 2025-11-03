@@ -5,6 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -15,15 +17,31 @@ export default function ContactForm() {
   });
   const { toast } = useToast();
 
+  const contactMutation = useMutation({
+    mutationFn: async (data: typeof formData) => {
+      const response = await apiRequest("POST", "/api/contact", data);
+      return response;
+    },
+    onSuccess: () => {
+      toast({
+        title: "Message sent!",
+        description: "Your message has been sent to the research team. We'll get back to you as soon as possible.",
+      });
+      setFormData({ name: "", email: "", institution: "", message: "" });
+    },
+    onError: (error) => {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact us directly via email.",
+        variant: "destructive",
+      });
+      console.error("Contact form error:", error);
+    }
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    //todo: remove mock functionality
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
-    setFormData({ name: "", email: "", institution: "", message: "" });
+    contactMutation.mutate(formData);
   };
 
   return (
@@ -85,8 +103,13 @@ export default function ContactForm() {
             />
           </div>
 
-          <Button type="submit" className="w-full" data-testid="button-submit">
-            Send Message
+          <Button 
+            type="submit" 
+            className="w-full" 
+            data-testid="button-submit"
+            disabled={contactMutation.isPending}
+          >
+            {contactMutation.isPending ? "Sending..." : "Send Message"}
           </Button>
         </form>
       </CardContent>
