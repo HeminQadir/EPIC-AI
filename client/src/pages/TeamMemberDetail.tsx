@@ -129,7 +129,7 @@ const teamMembersData: Record<string, any> = {
     affiliation: "Department of Cardiology, Oslo University Hospital",
     secondaryAffiliation: "Head of Cardiac Intensive Care Unit and Cardiac Intensive Care Research Unit",
     expertise: ["Clinical Trials", "Translational Research", "Cardiac Intensive Care"],
-    email: "g.o.andersen@icloud.com",
+    email: "uxgend@ous-hf.no",
     image: geirImage,
     bio: "Senior cardiologist Geir Øystein Andersen is a full-time clinician, Head of Cardiac intensive care unit and leader of the Cardiac intensive care research unit. PhD on cardiac alpha-adrenergic receptors. Broad expertise in clinical trials including patients with acute myocardial infarction, acute heart failure and cardiac arrest. Supervised 7 PhD students, around 115 publications.",
     researchProfile: ["Clinical Trials in Intensive Cardiac Care", "Cardiogenic Shock", "Acute Myocardial Infarction", "Cardiac Arrest"],

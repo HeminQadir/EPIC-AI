@@ -89,7 +89,7 @@ const teamMembers = [
     role: "Senior Cardiologist, MD, PhD",
     affiliation: "Department of Cardiology, Oslo University Hospital",
     expertise: ["Clinical Trials", "Translational Research", "Cardiac Intensive Care"],
-    email: "g.o.andersen@icloud.com",
+    email: "uxgend@ous-hf.no",
     image: geirImage
   }
 ];
