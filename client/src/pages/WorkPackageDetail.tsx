@@ -46,13 +46,13 @@ A visualization tool will be developed with three key features:
 • Channel-wise contribution graphs identifying critical channels for specific conditions
 
 Expected Results and Deliverables:
-• D1.1: Project-specific database (M6)
-• D1.2: Multi-grading rule-based EEG pattern recognition algorithm (M18)
-• D1.3: Development of three AI models (M24)
+• Project-specific database (M6)
+• Multi-grading rule-based EEG pattern recognition algorithm (M18)
+• Development of three AI models (M24)
 
 Target Publications:
-• 1 Conference paper (IEEE-EMBC)
-• 3 Journal papers (IEEE-TPAMI, Pattern Recognition, Resuscitation-Elsevier)`
+• 1 Conference paper
+• 3 Journal papers`
   },
   "wp2-ai-development": {
     title: "WP2: AI Algorithm Development",
