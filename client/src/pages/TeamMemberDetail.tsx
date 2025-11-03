@@ -129,11 +129,11 @@ const teamMembersData: Record<string, any> = {
     name: "Geir Øystein Andersen",
     role: "Senior Cardiologist, MD, PhD",
     affiliation: "Department of Cardiology, Oslo University Hospital",
-    secondaryAffiliation: "Head of Cardiac Intensive Care Unit and Cardiac Intensive Care Research Unit",
+    secondaryAffiliation: "Chair and Head of Cardiac Intensive Care Unit Research Group at OUS Ullevål",
     expertise: ["Clinical Trials", "Translational Research", "Cardiac Intensive Care"],
     email: "uxgend@ous-hf.no",
     image: geirImage,
-    bio: "Senior cardiologist Geir Øystein Andersen is a full-time clinician, Head of Cardiac intensive care unit and leader of the Cardiac intensive care research unit. PhD on cardiac alpha-adrenergic receptors. Broad expertise in clinical trials including patients with acute myocardial infarction, acute heart failure and cardiac arrest. Supervised 7 PhD students, around 115 publications.",
+    bio: "Senior cardiologist Geir Øystein Andersen is a full-time clinician, Chair and head of the research group of the cardiac ICU at OUS Ullevål, Department of Cardiology, OUS. He completed his PhD on cardiac alpha-adrenergic receptors and has extensive research experience within ischemic heart disease, cardiac shock and heart failure, and post-resuscitation care. He was a co-founder and designer of NORCAST as well as the recent multicenter RCT TAME. He has supervised 7 PhD students and has around 115 publications. He will contribute to WP3 in the EPIC-AI project.",
     researchProfile: ["Clinical Trials in Intensive Cardiac Care", "Cardiogenic Shock", "Acute Myocardial Infarction", "Cardiac Arrest"],
     links: {
       ousPage: "https://www.ous-research.no/home/cic/Group-members/11491"
